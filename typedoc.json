@@ -1,0 +1,9 @@
+{
+  "entryPoints": ["../ccc/packages/core/src/**/*"],
+  "out": "docs/api",
+  "plugin": ["typedoc-plugin-markdown"],
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "flattenOutputFiles": false
+}
