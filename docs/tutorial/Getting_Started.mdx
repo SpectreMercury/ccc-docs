@@ -1,0 +1,342 @@
+# CCC Getting Started
+
+Doc Type: Spec
+Author: lee jiaqi
+Created: May 27, 2024
+
+# CCC Getting Started
+
+## Installing
+
+### Use CCC in React Component
+
+- Install node module for React Component
+
+`npm install @ckb-ccc/connector-react`
+
+- Use it project
+
+```jsx
+// Example for Next.js with App Router
+
+import { ccc } from '@ckb-ccc/connector-react'
+
+"use client"
+import "./globals.css";
+import { ccc } from "@ckb-ccc/connector-react";
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body 
+      className="h-full w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative flex items-center justify-center">
+        <ccc.Provider>
+          {children}
+        </ccc.Provider>
+      </body>
+    </html>
+  );
+}
+
+// global.css
+ccc-connector {
+	z-index: 999 //To ensure that the wallet connection popup component is on the top layer.
+}
+
+// src/page.ts
+
+export default function Home() {
+	const { wallet, open, disconnect } = ccc.useCcc();
+	const signer = ccc.useSigner();
+	const [internalAddress, setInternalAddress] = useState("");
+	const [address, setAddress] = useState("");
+
+	useEffect(() => {
+    if (!signer) {
+      setInternalAddress("");
+      setAddress("");
+      return;
+    }
+
+    (async () => {
+      setInternalAddress(await signer.getInternalAddress());
+      setAddress(await signer.getRecommendedAddress());
+    })();
+  }, [signer]);
+  
+  return (
+	 {
+		 wallet ?  <div>{ wallet.address }</div> :  <div onclick={open}>Connect to Wallet</div>
+  )
+}
+
+```
+
+### Use CCC in Web Component
+
+- Install node module for WebComponent
+
+`npm install @ccc-ckb/connector`
+
+- Use it in Project
+
+```jsx
+// src/index.ts
+import { ccc } from '@ckb-ccc/connector'
+
+const connector = new ccc.WebComponentConnector();
+```
+
+### Use CCC in Node.js
+
+- install node module for Node.js
+
+`npm install @ckb-ccc/ccc` 
+
+- use it in project
+
+```jsx
+// src/index.ts
+
+import { ccc } from '@ckb-ccc/ccc'
+```
+
+## Common Terminology
+
+| provider | A Provider (in CCC) is a class which provides an abstraction for a connection to the Nervos and Bitcoin Network. |
+| --- | --- |
+| Signer | A Signer is a class which (usually) in some way directly or indirectly has access to a private key, which can sign messages and transactions to authorize the network to charge your account  to perform operations. |
+
+## Best Pratice - CKB Transfer (by @ccc/react-connector)
+
+```tsx
+import { ccc } from '@ccc/react-connector';
+import React, { useState, useEffect } from 'react';
+
+function Transfer () {
+  const signer = ccc.useSigner();
+  const [transferTo, setTransferTo] = useState<string>("");
+  const [amount, setAmount] = useState<string>("");
+  const [hash, setHash] = useState<string>("");
+
+  async function Transfer() {
+    if (!signer) {
+      return;
+    }
+    await ccc.Address.fromString(transferTo, signer.client);
+    const indexer = new Indexer(signer.client.getUrl());
+      let txSkeleton = new TransactionSkeleton({
+        cellProvider: indexer,
+      });
+      txSkeleton = await common.transfer(
+        txSkeleton,
+        [await signer.getRecommendedAddress()],
+        transferTo,
+        ccc.fixedPointFrom(amount),
+        undefined,
+        undefined,
+        { config: predefined.AGGRON4 },
+      );
+      txSkeleton = await common.payFeeByFeeRate(
+        txSkeleton,
+        [await signer.getRecommendedAddress()],
+        BigInt(1500),
+        undefined,
+        { config: predefined.AGGRON4 },
+      );
+
+    const tx = ccc.Transaction.fromLumosSkeleton(txSkeleton);
+    setHash(await signer.sendTransaction(tx));
+  }
+
+  return (
+    <>
+      <div>
+        <input
+          className="rounded-full border border-black px-4 py-2"
+          type="text"
+          value={transferTo}
+          onInput={(e) => setTransferTo(e.currentTarget.value)}
+          placeholder="Enter address to transfer to"
+        />
+        <input
+          className="mt-1 rounded-full border border-black px-4 py-2"
+          type="text"
+          value={amount}
+          onInput={(e) => setAmount(e.currentTarget.value)}
+          placeholder="Enter amount to transfer"
+        />
+        <button onclick={() => { Transfer() }}>Transfer</button>
+      </div>
+    </>
+  )
+}
+```
+
+## Best Pratice - Create DoBs (by @ccc/react-connector)
+
+```tsx
+import { createSpore } from '@spore-sdk/core';
+import { bytifyRawString, createSpore, predefinedSporeConfigs } from "@spore-sdk/core";
+import { BI } from "@ckb-lumos/lumos";
+import React, { useState, useEffect } from 'react';
+
+function Home() {
+  const [address, setAddress] = useState("");
+  const [internalAddress, setInternalAddress] = useState("");
+  const signer = ccc.useSigner();
+  const { wallet, open, disconnect } = ccc.useCcc();
+
+  function formatString(str: string, maxLen: number = 15): string {
+    console.log(str);
+    if (str.length > maxLen) {
+      return `${str.slice(0, 8)}......${str.slice(-4)}`;
+    }
+    return str;
+  }
+
+  const createCCCSpore = async () => {
+    const { txSkeleton } = await createSpore({
+      data: {
+        contentType:'text/plain',
+        content: bytifyRawString('Hey Hey Hey, JoyID Ma Dong Mei'),
+      },
+      fromInfos: [address!!],
+      toLock: (await signer?.getRecommendedAddressObj(address))!!.script,
+      config: predefinedSporeConfigs.Testnet,
+      capacityMargin: BI.from(0)
+    });
+    console.log(JSON.stringify(txSkeleton));
+    const tx = ccc.Transaction.fromLumosSkeleton(txSkeleton);
+    // const signedTx = await signer?.signTransaction(tx);
+    const txHash = await signer?.sendTransaction(tx!!)
+    console.log(txHash);
+  }
+
+    useEffect(() => {
+      if (!signer) {
+        setInternalAddress("");
+        setAddress("");
+        return;
+      }
+
+      (async () => {
+        setInternalAddress(await signer.getInternalAddress());
+        setAddress(await signer.getRecommendedAddress());
+      })();
+    }, [signer]);
+
+    return (
+      <div className={cn(
+        "z-40 h-60 row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
+      )}>
+      <div className='flex items-center gap-4'>
+        <Image
+          src={'/ccc.webp'}
+          width={40}
+          height={40}
+          alt={'metamask'}
+          className='rounded-full'
+        />
+        <div className="font-extrabold">CCC</div>
+        </div>
+        {
+          address && 
+          <>
+            <div>
+              <p className='font-light'>CCC Address: {formatString(address)}</p>
+            </div>
+            <div className='flex gap-1'>
+              <button
+                onClick={createCCCSpore} 
+                className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
+                <span className="absolute inset-0 overflow-hidden rounded-full">
+                  <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+                </span>
+                <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
+                  <span>{`Create Spore`}</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.5"
+                      d="M10.75 8.75L14.25 12L10.75 15.25"
+                    ></path>
+                  </svg>
+                </div>
+                <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
+              </button>
+              <button
+                onClick={createPublicCluster} 
+                className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
+                <span className="absolute inset-0 overflow-hidden rounded-full">
+                  <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+                </span>
+                <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
+                  <span>{`Create Public Cluster`}</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.5"
+                      d="M10.75 8.75L14.25 12L10.75 15.25"
+                    ></path>
+                  </svg>
+                </div>
+                <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
+              </button>
+            </div>
+          </>
+        }
+        {
+          !address && <div onClick={open}>
+          <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
+                    <span className="absolute inset-0 overflow-hidden rounded-full">
+                      <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+                    </span>
+                    <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
+                      <span>{`Connect CCC`}</span>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
+                          d="M10.75 8.75L14.25 12L10.75 15.25"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
+                  </button>
+                </div>
+                }        
+            <div>
+          </div>
+        </div>
+    )
+}
+```

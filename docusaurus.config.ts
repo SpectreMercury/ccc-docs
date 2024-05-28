@@ -66,6 +66,12 @@ const config: Config = {
       items: [
         {
           type: 'doc',
+          docId: 'tutorial/Getting_Started',
+          position: 'left',
+          label: 'tutorial'
+        },
+        {
+          type: 'doc',
           docId: 'api/README',
           position: 'left',
           label: 'API',

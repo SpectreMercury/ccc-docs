@@ -1,9 +1,7 @@
 {
-  "entryPoints": ["../ccc/packages/core/src/**/*"],
+  "entryPoints": ["../ccc/packages/core/src/index.ts"],
   "out": "docs/api",
   "plugin": ["typedoc-plugin-markdown"],
-  "excludePrivate": true,
-  "excludeProtected": true,
-  "excludeExternals": true,
-  "flattenOutputFiles": false
+  "outputFileStrategy": "members",
+  "flattenOutputFiles": true
 }
