@@ -1,18 +1,18 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / numToBytes
+@ckb-ccc/core / ccc / numToBytes
 
 # Function: numToBytes()
 
-> **numToBytes**(`val`, `bytes`?): [`Bytes`](ccc.Type.Bytes.md)
+> **numToBytes**(`val`, `bytes`?): `Bytes`
 
 Converts a NumLike value to a byte array in little-endian order.
 
 ## Parameters
 
-• **val**: [`NumLike`](ccc.Type.NumLike.md)
+• **val**: `NumLike`
 
 The value to convert, which can be a string, number, bigint, or HexLike.
 
@@ -22,7 +22,7 @@ The number of bytes to use for the representation. If not provided, the exact nu
 
 ## Returns
 
-[`Bytes`](ccc.Type.Bytes.md)
+`Bytes`
 
 A Uint8Array containing the byte representation of the numeric value.
 
@@ -34,4 +34,4 @@ const bytes = numToBytes(12345, 4); // Outputs Uint8Array [57, 48, 0, 0]
 
 ## Source
 
-[num/index.ts:67](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/num/index.ts#L67)
+num/index.ts:67

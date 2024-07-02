@@ -13,8 +13,8 @@ This repository contains the documentation for CCC. It serves as a guide and ref
 
 ## Useful Links
 
-- **GitHub Repository:** [ccc on GitHub](https://github.com/ckb-ecofund/ccc)
-- **Demo:** [View Demo](https://ckbccc-demo.vercel.app/)
+- **GitHub Repository:** ccc on GitHub
+- **Demo:** View Demo
 
 ## Documentation
 
@@ -22,26 +22,26 @@ The documentation is organized into several sections based on categories and sub
 
 ### Class
 
-- **Core**: [class/core](Class/core/Address)
-- **EIP6963**: [class/eip6963](Class/eip6963/Signer)
-- **JoyId**: [class/joy-id](Class/joy-id/BitcoinSigner)
-- **OKX**: [class/okx](Class/okx/BitcoinSigner)
-- **Uni-Sat**: [class/uni-sat](Class/uni-sat/Signer)
+- **Core**: class/core
+- **EIP6963**: class/eip6963
+- **JoyId**: class/joy-id
+- **OKX**: class/okx
+- **Uni-Sat**: class/uni-sat
 
 ### Function
 
-- **Core**: [functions/core](Functions/core/apply)
-- **JoyId**: [functions/joy-id](joy-id/getJoyIdSigners)
-- **OKX**: [functions/okx](Functions/okx/getOKXBitcoinSigner)
-- **Uni-Sat**: [functions/uni-sat](Functions/uni-sat/getUniSatSigner)
+- **Core**: functions/core
+- **JoyId**: functions/joy-id
+- **OKX**: functions/okx
+- **Uni-Sat**: functions/uni-sat
 
 ### Variable
 
-- **Core**: [variable/core](Variable/core/One)
+- **Core**: variable/core
 
 
 ### Enumeration
 
-- **Core**: [enumeration/core](Enumeration/core/KnownScript)
+- **Core**: enumeration/core
 
 

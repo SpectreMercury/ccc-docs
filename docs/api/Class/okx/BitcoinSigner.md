@@ -1,8 +1,8 @@
-[**@ckb-ccc/okx**](README.md) • **Docs**
+**@ckb-ccc/okx** • **Docs**
 
 ***
 
-[@ckb-ccc/okx](README.md) / [Okx](Namespace.Okx.md) / BitcoinSigner
+@ckb-ccc/okx / Okx / BitcoinSigner
 
 # Class: BitcoinSigner
 
@@ -16,7 +16,7 @@ Class representing a Bitcoin signer that extends the UniSat Signer.
 
 ### new BitcoinSigner()
 
-> **new BitcoinSigner**(`client`, `provider`): [`BitcoinSigner`](Okx.Class.BitcoinSigner.md)
+> **new BitcoinSigner**(`client`, `provider`): `BitcoinSigner`
 
 Creates an instance of BitcoinSigner.
 
@@ -32,7 +32,7 @@ The Bitcoin provider.
 
 #### Returns
 
-[`BitcoinSigner`](Okx.Class.BitcoinSigner.md)
+`BitcoinSigner`
 
 #### Overrides
 
@@ -40,7 +40,7 @@ The Bitcoin provider.
 
 #### Source
 
-[okx/src/signer.ts:16](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/okx/src/signer.ts#L16)
+okx/src/signer.ts:16
 
 ## Properties
 
@@ -70,7 +70,7 @@ The Bitcoin provider.
 
 #### Source
 
-[okx/src/signer.ts:18](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/okx/src/signer.ts#L18)
+okx/src/signer.ts:18
 
 ## Accessors
 

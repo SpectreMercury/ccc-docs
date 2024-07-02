@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / WitnessArgs
+@ckb-ccc/core / ccc / WitnessArgs
 
 # Class: WitnessArgs
 
@@ -10,7 +10,7 @@
 
 ### new WitnessArgs()
 
-> **new WitnessArgs**(`lock`?, `inputType`?, `outputType`?): [`WitnessArgs`](ccc.Class.WitnessArgs.md)
+> **new WitnessArgs**(`lock`?, `inputType`?, `outputType`?): `WitnessArgs`
 
 Creates an instance of WitnessArgs.
 
@@ -30,11 +30,11 @@ The optional output type field of the witness.
 
 #### Returns
 
-[`WitnessArgs`](ccc.Class.WitnessArgs.md)
+`WitnessArgs`
 
 #### Source
 
-[ckb/transaction.ts:568](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L568)
+ckb/transaction.ts:568
 
 ## Properties
 
@@ -46,7 +46,7 @@ The optional input type field of the witness.
 
 #### Source
 
-[ckb/transaction.ts:570](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L570)
+ckb/transaction.ts:570
 
 ***
 
@@ -58,7 +58,7 @@ The optional lock field of the witness.
 
 #### Source
 
-[ckb/transaction.ts:569](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L569)
+ckb/transaction.ts:569
 
 ***
 
@@ -70,7 +70,7 @@ The optional output type field of the witness.
 
 #### Source
 
-[ckb/transaction.ts:571](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L571)
+ckb/transaction.ts:571
 
 ## Methods
 
@@ -100,7 +100,7 @@ An object representing the witness arguments in molecule data format.
 
 #### Source
 
-[ckb/transaction.ts:608](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L608)
+ckb/transaction.ts:608
 
 ***
 
@@ -124,25 +124,25 @@ const witnessArgsBytes = witnessArgs.toBytes();
 
 #### Source
 
-[ckb/transaction.ts:627](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L627)
+ckb/transaction.ts:627
 
 ***
 
 ### from()
 
-> `static` **from**(`witnessArgs`): [`WitnessArgs`](ccc.Class.WitnessArgs.md)
+> `static` **from**(`witnessArgs`): `WitnessArgs`
 
 Creates a WitnessArgs instance from a WitnessArgsLike object.
 
 #### Parameters
 
-• **witnessArgs**: [`WitnessArgsLike`](ccc.Type.WitnessArgsLike.md)
+• **witnessArgs**: `WitnessArgsLike`
 
 A WitnessArgsLike object or an instance of WitnessArgs.
 
 #### Returns
 
-[`WitnessArgs`](ccc.Class.WitnessArgs.md)
+`WitnessArgs`
 
 A WitnessArgs instance.
 
@@ -158,25 +158,25 @@ const witnessArgs = WitnessArgs.from({
 
 #### Source
 
-[ckb/transaction.ts:590](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L590)
+ckb/transaction.ts:590
 
 ***
 
 ### fromBytes()
 
-> `static` **fromBytes**(`bytes`): [`WitnessArgs`](ccc.Class.WitnessArgs.md)
+> `static` **fromBytes**(`bytes`): `WitnessArgs`
 
 Creates a WitnessArgs instance from a byte-like value or molecule WitnessArgs.
 
 #### Parameters
 
-• **bytes**: [`BytesLike`](ccc.Type.BytesLike.md) \| `WitnessArgs`
+• **bytes**: `BytesLike` \| `WitnessArgs`
 
 The byte-like value or molecule WitnessArgs to convert.
 
 #### Returns
 
-[`WitnessArgs`](ccc.Class.WitnessArgs.md)
+`WitnessArgs`
 
 A WitnessArgs instance.
 
@@ -188,4 +188,4 @@ const witnessArgs = WitnessArgs.fromBytes(new Uint8Array([/* witness args bytes 
 
 #### Source
 
-[ckb/transaction.ts:643](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L643)
+ckb/transaction.ts:643

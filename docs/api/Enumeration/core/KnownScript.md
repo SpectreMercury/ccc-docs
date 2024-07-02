@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / KnownScript
+@ckb-ccc/core / ccc / KnownScript
 
 # Enumeration: KnownScript
 
@@ -14,7 +14,7 @@
 
 #### Source
 
-[client/client.ts:22](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L22)
+client/client.ts:22
 
 ***
 
@@ -24,7 +24,7 @@
 
 #### Source
 
-[client/client.ts:24](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L24)
+client/client.ts:24
 
 ***
 
@@ -34,7 +34,7 @@
 
 #### Source
 
-[client/client.ts:23](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L23)
+client/client.ts:23
 
 ***
 
@@ -44,7 +44,7 @@
 
 #### Source
 
-[client/client.ts:25](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L25)
+client/client.ts:25
 
 ***
 
@@ -54,7 +54,7 @@
 
 #### Source
 
-[client/client.ts:20](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L20)
+client/client.ts:20
 
 ***
 
@@ -64,4 +64,4 @@
 
 #### Source
 
-[client/client.ts:21](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L21)
+client/client.ts:21

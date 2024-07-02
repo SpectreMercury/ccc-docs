@@ -1,12 +1,12 @@
-[**@ckb-ccc/okx**](README.md) • **Docs**
+**@ckb-ccc/okx** • **Docs**
 
 ***
 
-[@ckb-ccc/okx](README.md) / [Okx](Namespace.Okx.md) / getOKXBitcoinSigner
+@ckb-ccc/okx / Okx / getOKXBitcoinSigner
 
 # Function: getOKXBitcoinSigner()
 
-> **getOKXBitcoinSigner**(`client`): [`BitcoinSigner`](Okx.Class.BitcoinSigner.md) \| `undefined`
+> **getOKXBitcoinSigner**(`client`): `BitcoinSigner` \| `undefined`
 
 Retrieves the OKX Bitcoin signer if available.
 
@@ -18,10 +18,10 @@ The client instance.
 
 ## Returns
 
-[`BitcoinSigner`](Okx.Class.BitcoinSigner.md) \| `undefined`
+`BitcoinSigner` \| `undefined`
 
 The BitcoinSigner instance if the OKX wallet is available, otherwise undefined.
 
 ## Source
 
-[okx/src/signersFactory.ts:10](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/okx/src/signersFactory.ts#L10)
+okx/src/signersFactory.ts:10

@@ -1,47 +1,49 @@
-// const fs = require('fs');
-// const path = require('path');
+const fs = require('fs');
+const path = require('path');
 
-// const docsPath = './docs/api'; // TypeDoc 生成的文档目录
-// const targetBasePath = './docs/api'; // 新的目标基目录
+const docsDir = path.join(__dirname, './docs'); // 修改为你的Markdown文件存放目录
 
-// // 递归创建目录
-// function ensureDir(dirPath) {
-//   if (!fs.existsSync(dirPath)) {
-//     fs.mkdirSync(dirPath, { recursive: true });
-//   }
-// }
+// 读取和更新文件中的链接，删除所有Markdown链接
+function updateLinks(filePath) {
+  fs.readFile(filePath, 'utf8', (err, content) => {
+    if (err) {
+      console.error(`Error reading file ${filePath}:`, err);
+      return;
+    }
 
-// // 移动并重命名文件
-// function reorganizeDocs(currentPath) {
-//   fs.readdir(currentPath, { withFileTypes: true }, (err, files) => {
-//     if (err) {
-//       console.error(err);
-//       return;
-//     }
+    // 正则表达式用于匹配并删除Markdown链接，只保留链接文本
+    const updatedContent = content.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1');
 
-//     files.forEach(file => {
-//       if (file.isDirectory()) {
-//         reorganizeDocs(path.join(currentPath, file.name)); // 递归处理子目录
-//       } else {
-//         const parts = file.name.split('.'); // 拆分文件名
-//         if (parts.length > 2 && parts[0] === 'ccc') {
-//           const category = parts[1]; // 分类如 Class, Function 等
-//           const newFileName = file.name.replace(`ccc.${category}.`, ''); // 去掉 'ccc.分类.'
-//           const categoryPath = path.join(targetBasePath, category.toLowerCase()); // 创建分类目录路径
-//           const newFilePath = path.join(categoryPath, newFileName.toLowerCase()); // 组装新的文件路径
+    // 如果内容有更新，则写回文件
+    if (content !== updatedContent) {
+      fs.writeFile(filePath, updatedContent, 'utf8', err => {
+        if (err) {
+          console.error(`Error writing file ${filePath}:`, err);
+          return;
+        }
+        console.log(`Updated links in ${filePath}`);
+      });
+    }
+  });
+}
 
-//           ensureDir(categoryPath); // 确保分类目录存在
-//           fs.rename(path.join(currentPath, file.name), newFilePath, (err) => {
-//             if (err) {
-//               console.error(err);
-//             } else {
-//               console.log(`Moved ${file.name} to ${newFilePath}`);
-//             }
-//           });
-//         }
-//       }
-//     });
-//   });
-// }
+// 遍历目录下的所有文件
+function traverseDirectory(directory) {
+  fs.readdir(directory, { withFileTypes: true }, (err, entries) => {
+    if (err) {
+      console.error(`Error reading directory: ${directory}`, err);
+      return;
+    }
 
-// reorganizeDocs(docsPath); // 开始处理文件
+    entries.forEach(entry => {
+      const fullPath = path.join(directory, entry.name);
+      if (entry.isDirectory()) {
+        traverseDirectory(fullPath);
+      } else if (entry.isFile() && entry.name.endsWith('.md')) {
+        updateLinks(fullPath);
+      }
+    });
+  });
+}
+
+traverseDirectory(docsDir);

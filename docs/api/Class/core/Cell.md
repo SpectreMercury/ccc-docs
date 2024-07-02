@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / Cell
+@ckb-ccc/core / ccc / Cell
 
 # Class: Cell
 
@@ -10,17 +10,17 @@
 
 ### new Cell()
 
-> **new Cell**(`outPoint`, `cellOutput`, `outputData`, `blockNumber`): [`Cell`](ccc.Class.Cell.md)
+> **new Cell**(`outPoint`, `cellOutput`, `outputData`, `blockNumber`): `Cell`
 
 Creates an instance of Cell.
 
 #### Parameters
 
-• **outPoint**: [`OutPoint`](ccc.Class.OutPoint.md)
+• **outPoint**: `OutPoint`
 
 The output point of the cell.
 
-• **cellOutput**: [`CellOutput`](ccc.Class.CellOutput.md)
+• **cellOutput**: `CellOutput`
 
 The cell output of the cell.
 
@@ -34,11 +34,11 @@ The block number of the cell.
 
 #### Returns
 
-[`Cell`](ccc.Class.Cell.md)
+`Cell`
 
 #### Source
 
-[ckb/transaction.ts:297](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L297)
+ckb/transaction.ts:297
 
 ## Properties
 
@@ -50,31 +50,31 @@ The block number of the cell.
 
 #### Source
 
-[ckb/transaction.ts:301](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L301)
+ckb/transaction.ts:301
 
 ***
 
 ### cellOutput
 
-> **cellOutput**: [`CellOutput`](ccc.Class.CellOutput.md)
+> **cellOutput**: `CellOutput`
 
 The cell output of the cell.
 
 #### Source
 
-[ckb/transaction.ts:299](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L299)
+ckb/transaction.ts:299
 
 ***
 
 ### outPoint
 
-> **outPoint**: [`OutPoint`](ccc.Class.OutPoint.md)
+> **outPoint**: `OutPoint`
 
 The output point of the cell.
 
 #### Source
 
-[ckb/transaction.ts:298](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L298)
+ckb/transaction.ts:298
 
 ***
 
@@ -86,28 +86,28 @@ The output data of the cell.
 
 #### Source
 
-[ckb/transaction.ts:300](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L300)
+ckb/transaction.ts:300
 
 ## Methods
 
 ### from()
 
-> `static` **from**(`cell`): [`Cell`](ccc.Class.Cell.md)
+> `static` **from**(`cell`): `Cell`
 
 Creates a Cell instance from a CellLike object.
 
 #### Parameters
 
-• **cell**: [`CellLike`](ccc.Type.CellLike.md)
+• **cell**: `CellLike`
 
 A CellLike object or an instance of Cell.
 
 #### Returns
 
-[`Cell`](ccc.Class.Cell.md)
+`Cell`
 
 A Cell instance.
 
 #### Source
 
-[ckb/transaction.ts:311](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L311)
+ckb/transaction.ts:311

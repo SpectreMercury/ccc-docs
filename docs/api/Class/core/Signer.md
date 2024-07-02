@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / Signer
+@ckb-ccc/core / ccc / Signer
 
 # Class: `abstract` Signer
 
@@ -11,80 +11,80 @@ This class provides methods to connect, get addresses, and sign transactions.
 
 ## Extended by
 
-- [`SignerBtc`](ccc.Class.SignerBtc.md)
-- [`SignerCkbScriptReadonly`](ccc.Class.SignerCkbScriptReadonly.md)
-- [`SignerDummy`](ccc.Class.SignerDummy.md)
-- [`SignerEvm`](ccc.Class.SignerEvm.md)
+- `SignerBtc`
+- `SignerCkbScriptReadonly`
+- `SignerDummy`
+- `SignerEvm`
 
 ## Constructors
 
 ### new Signer()
 
-> **new Signer**(`client_`): [`Signer`](ccc.Class.Signer.md)
+> **new Signer**(`client_`): `Signer`
 
 #### Parameters
 
-• **client\_**: [`Client`](ccc.Class.Client.md)
+• **client\_**: `Client`
 
 #### Returns
 
-[`Signer`](ccc.Class.Signer.md)
+`Signer`
 
 #### Source
 
-[signer/signer/index.ts:40](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L40)
+signer/signer/index.ts:40
 
 ## Properties
 
 ### client\_
 
-> `protected` **client\_**: [`Client`](ccc.Class.Client.md)
+> `protected` **client\_**: `Client`
 
 #### Source
 
-[signer/signer/index.ts:40](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L40)
+signer/signer/index.ts:40
 
 ## Accessors
 
 ### client
 
-> `get` **client**(): [`Client`](ccc.Class.Client.md)
+> `get` **client**(): `Client`
 
 #### Returns
 
-[`Client`](ccc.Class.Client.md)
+`Client`
 
 #### Source
 
-[signer/signer/index.ts:45](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L45)
+signer/signer/index.ts:45
 
 ***
 
 ### signType
 
-> `get` `abstract` **signType**(): [`SignerSignType`](ccc.Enumeration.SignerSignType.md)
+> `get` `abstract` **signType**(): `SignerSignType`
 
 #### Returns
 
-[`SignerSignType`](ccc.Enumeration.SignerSignType.md)
+`SignerSignType`
 
 #### Source
 
-[signer/signer/index.ts:43](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L43)
+signer/signer/index.ts:43
 
 ***
 
 ### type
 
-> `get` `abstract` **type**(): [`SignerType`](ccc.Enumeration.SignerType.md)
+> `get` `abstract` **type**(): `SignerType`
 
 #### Returns
 
-[`SignerType`](ccc.Enumeration.SignerType.md)
+`SignerType`
 
 #### Source
 
-[signer/signer/index.ts:42](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L42)
+signer/signer/index.ts:42
 
 ## Methods
 
@@ -102,7 +102,7 @@ A promise that resolves when the connection is complete.
 
 #### Source
 
-[signer/signer/index.ts:89](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L89)
+signer/signer/index.ts:89
 
 ***
 
@@ -120,25 +120,25 @@ A promise that resolves when disconnected.
 
 #### Source
 
-[signer/signer/index.ts:96](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L96)
+signer/signer/index.ts:96
 
 ***
 
 ### getAddressObjs()
 
-> `abstract` **getAddressObjs**(): `Promise`\<[`Address`](ccc.Class.Address.md)[]\>
+> `abstract` **getAddressObjs**(): `Promise`\<`Address`[]\>
 
 Gets an array of Address objects associated with the signer.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)[]\>
+`Promise`\<`Address`[]\>
 
 A promise that resolves to an array of Address objects.
 
 #### Source
 
-[signer/signer/index.ts:126](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L126)
+signer/signer/index.ts:126
 
 ***
 
@@ -156,7 +156,7 @@ A promise that resolves to an array of addresses as strings.
 
 #### Source
 
-[signer/signer/index.ts:153](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L153)
+signer/signer/index.ts:153
 
 ***
 
@@ -174,7 +174,7 @@ A promise that resolves to the balance
 
 #### Source
 
-[signer/signer/index.ts:164](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L164)
+signer/signer/index.ts:164
 
 ***
 
@@ -192,7 +192,7 @@ A promise that resolves to a string representing the identity
 
 #### Source
 
-[signer/signer/index.ts:117](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L117)
+signer/signer/index.ts:117
 
 ***
 
@@ -210,7 +210,7 @@ A promise that resolves to a string representing the internal address.
 
 #### Source
 
-[signer/signer/index.ts:110](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L110)
+signer/signer/index.ts:110
 
 ***
 
@@ -234,13 +234,13 @@ A promise that resolves to the recommended address as a string.
 
 #### Source
 
-[signer/signer/index.ts:144](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L144)
+signer/signer/index.ts:144
 
 ***
 
 ### getRecommendedAddressObj()
 
-> **getRecommendedAddressObj**(`_preference`?): `Promise`\<[`Address`](ccc.Class.Address.md)\>
+> **getRecommendedAddressObj**(`_preference`?): `Promise`\<`Address`\>
 
 Gets the recommended Address object for the signer.
 
@@ -252,13 +252,13 @@ Optional preference parameter.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)\>
+`Promise`\<`Address`\>
 
 A promise that resolves to the recommended Address object.
 
 #### Source
 
-[signer/signer/index.ts:134](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L134)
+signer/signer/index.ts:134
 
 ***
 
@@ -276,25 +276,25 @@ A promise that resolves the connection status.
 
 #### Source
 
-[signer/signer/index.ts:103](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L103)
+signer/signer/index.ts:103
 
 ***
 
 ### prepareTransaction()
 
-> **prepareTransaction**(`_`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **prepareTransaction**(`_`): `Promise`\<`Transaction`\>
 
 prepare a transaction before signing. This method is not implemented and should be overridden by subclasses.
 
 #### Parameters
 
-• **\_**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **\_**: `TransactionLike`
 
 The transaction to prepare, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to the prepared Transaction object.
 
@@ -304,7 +304,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:262](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L262)
+signer/signer/index.ts:262
 
 ***
 
@@ -316,7 +316,7 @@ Replace the current client.
 
 #### Parameters
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 #### Returns
 
@@ -324,7 +324,7 @@ Replace the current client.
 
 #### Source
 
-[signer/signer/index.ts:80](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L80)
+signer/signer/index.ts:80
 
 ***
 
@@ -336,7 +336,7 @@ Sends a transaction after signing it.
 
 #### Parameters
 
-• **tx**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **tx**: `TransactionLike`
 
 The transaction to send, represented as a TransactionLike object.
 
@@ -348,23 +348,23 @@ A promise that resolves to the transaction hash as a Hex string.
 
 #### Source
 
-[signer/signer/index.ts:240](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L240)
+signer/signer/index.ts:240
 
 ***
 
 ### signMessage()
 
-> **signMessage**(`message`): `Promise`\<[`Signature`](ccc.Class.Signature.md)\>
+> **signMessage**(`message`): `Promise`\<`Signature`\>
 
 Signs a message.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
 #### Returns
 
-`Promise`\<[`Signature`](ccc.Class.Signature.md)\>
+`Promise`\<`Signature`\>
 
 A promise that resolves to the signature info.
 
@@ -374,7 +374,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:177](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L177)
+signer/signer/index.ts:177
 
 ***
 
@@ -386,7 +386,7 @@ Signs a message and returns signature only. This method is not implemented and s
 
 #### Parameters
 
-• **\_**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **\_**: `BytesLike`
 
 The message to sign, as a string or BytesLike object.
 
@@ -402,25 +402,25 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:192](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L192)
+signer/signer/index.ts:192
 
 ***
 
 ### signOnlyTransaction()
 
-> **signOnlyTransaction**(`_`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **signOnlyTransaction**(`_`): `Promise`\<`Transaction`\>
 
 Signs a transaction without preparing information for it. This method is not implemented and should be overridden by subclasses.
 
 #### Parameters
 
-• **\_**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **\_**: `TransactionLike`
 
 The transaction to sign, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to the signed Transaction object.
 
@@ -430,31 +430,31 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:273](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L273)
+signer/signer/index.ts:273
 
 ***
 
 ### signTransaction()
 
-> **signTransaction**(`tx`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **signTransaction**(`tx`): `Promise`\<`Transaction`\>
 
 Signs a transaction.
 
 #### Parameters
 
-• **tx**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **tx**: `TransactionLike`
 
 The transaction to sign, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to the signed Transaction object.
 
 #### Source
 
-[signer/signer/index.ts:250](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L250)
+signer/signer/index.ts:250
 
 ***
 
@@ -466,9 +466,9 @@ Verify a signature.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
-• **signature**: `string` \| [`Signature`](ccc.Class.Signature.md)
+• **signature**: `string` \| `Signature`
 
 #### Returns
 
@@ -482,7 +482,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:204](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L204)
+signer/signer/index.ts:204
 
 ***
 
@@ -494,7 +494,7 @@ Verify a string signature. This method is not implemented and should be overridd
 
 #### Parameters
 
-• **\_0**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **\_0**: `BytesLike`
 
 The original message.
 
@@ -514,7 +514,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:230](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L230)
+signer/signer/index.ts:230
 
 ***
 
@@ -524,9 +524,9 @@ Will throw an error if not implemented.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
-• **signature**: [`Signature`](ccc.Class.Signature.md)
+• **signature**: `Signature`
 
 #### Returns
 
@@ -534,4 +534,4 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:49](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L49)
+signer/signer/index.ts:49

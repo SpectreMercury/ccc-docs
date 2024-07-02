@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / SignerBtc
+@ckb-ccc/core / ccc / SignerBtc
 
 # Class: `abstract` SignerBtc
 
@@ -12,89 +12,89 @@ as well as signing transactions.
 
 ## Extends
 
-- [`Signer`](ccc.Class.Signer.md)
+- `Signer`
 
 ## Extended by
 
-- [`SignerBtcPublicKeyReadonly`](ccc.Class.SignerBtcPublicKeyReadonly.md)
+- `SignerBtcPublicKeyReadonly`
 
 ## Constructors
 
 ### new SignerBtc()
 
-> **new SignerBtc**(`client_`): [`SignerBtc`](ccc.Class.SignerBtc.md)
+> **new SignerBtc**(`client_`): `SignerBtc`
 
 #### Parameters
 
-• **client\_**: [`Client`](ccc.Class.Client.md)
+• **client\_**: `Client`
 
 #### Returns
 
-[`SignerBtc`](ccc.Class.SignerBtc.md)
+`SignerBtc`
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`constructor`](ccc.Class.Signer.md#constructors)
+`Signer`.`constructor`
 
 #### Source
 
-[signer/signer/index.ts:40](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L40)
+signer/signer/index.ts:40
 
 ## Properties
 
 ### client\_
 
-> `protected` **client\_**: [`Client`](ccc.Class.Client.md)
+> `protected` **client\_**: `Client`
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`client_`](ccc.Class.Signer.md#client_)
+`Signer`.`client_`
 
 #### Source
 
-[signer/signer/index.ts:40](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L40)
+signer/signer/index.ts:40
 
 ## Accessors
 
 ### client
 
-> `get` **client**(): [`Client`](ccc.Class.Client.md)
+> `get` **client**(): `Client`
 
 #### Returns
 
-[`Client`](ccc.Class.Client.md)
+`Client`
 
 #### Source
 
-[signer/signer/index.ts:45](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L45)
+signer/signer/index.ts:45
 
 ***
 
 ### signType
 
-> `get` **signType**(): [`SignerSignType`](ccc.Enumeration.SignerSignType.md)
+> `get` **signType**(): `SignerSignType`
 
 #### Returns
 
-[`SignerSignType`](ccc.Enumeration.SignerSignType.md)
+`SignerSignType`
 
 #### Source
 
-[signer/btc/signerBtc.ts:21](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/btc/signerBtc.ts#L21)
+signer/btc/signerBtc.ts:21
 
 ***
 
 ### type
 
-> `get` **type**(): [`SignerType`](ccc.Enumeration.SignerType.md)
+> `get` **type**(): `SignerType`
 
 #### Returns
 
-[`SignerType`](ccc.Enumeration.SignerType.md)
+`SignerType`
 
 #### Source
 
-[signer/btc/signerBtc.ts:17](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/btc/signerBtc.ts#L17)
+signer/btc/signerBtc.ts:17
 
 ## Methods
 
@@ -112,11 +112,11 @@ A promise that resolves when the connection is complete.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`connect`](ccc.Class.Signer.md#connect)
+`Signer`.`connect`
 
 #### Source
 
-[signer/signer/index.ts:89](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L89)
+signer/signer/index.ts:89
 
 ***
 
@@ -134,33 +134,33 @@ A promise that resolves when disconnected.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`disconnect`](ccc.Class.Signer.md#disconnect)
+`Signer`.`disconnect`
 
 #### Source
 
-[signer/signer/index.ts:96](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L96)
+signer/signer/index.ts:96
 
 ***
 
 ### getAddressObjs()
 
-> **getAddressObjs**(): `Promise`\<[`Address`](ccc.Class.Address.md)[]\>
+> **getAddressObjs**(): `Promise`\<`Address`[]\>
 
 Gets an array of Address objects representing the known script addresses for the signer.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)[]\>
+`Promise`\<`Address`[]\>
 
 A promise that resolves to an array of Address objects.
 
 #### Overrides
 
-[`Signer`](ccc.Class.Signer.md).[`getAddressObjs`](ccc.Class.Signer.md#getaddressobjs)
+`Signer`.`getAddressObjs`
 
 #### Source
 
-[signer/btc/signerBtc.ts:62](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/btc/signerBtc.ts#L62)
+signer/btc/signerBtc.ts:62
 
 ***
 
@@ -178,11 +178,11 @@ A promise that resolves to an array of addresses as strings.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`getAddresses`](ccc.Class.Signer.md#getaddresses)
+`Signer`.`getAddresses`
 
 #### Source
 
-[signer/signer/index.ts:153](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L153)
+signer/signer/index.ts:153
 
 ***
 
@@ -200,11 +200,11 @@ A promise that resolves to the balance
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`getBalance`](ccc.Class.Signer.md#getbalance)
+`Signer`.`getBalance`
 
 #### Source
 
-[signer/signer/index.ts:164](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L164)
+signer/signer/index.ts:164
 
 ***
 
@@ -222,25 +222,25 @@ A promise that resolves to a string representing the Bitcoin account.
 
 #### Source
 
-[signer/btc/signerBtc.ts:30](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/btc/signerBtc.ts#L30)
+signer/btc/signerBtc.ts:30
 
 ***
 
 ### getBtcPublicKey()
 
-> `abstract` **getBtcPublicKey**(): `Promise`\<[`BytesLike`](ccc.Type.BytesLike.md)\>
+> `abstract` **getBtcPublicKey**(): `Promise`\<`BytesLike`\>
 
 Gets the Bitcoin public key associated with the signer.
 
 #### Returns
 
-`Promise`\<[`BytesLike`](ccc.Type.BytesLike.md)\>
+`Promise`\<`BytesLike`\>
 
 A promise that resolves to a HexLike value representing the Bitcoin public key.
 
 #### Source
 
-[signer/btc/signerBtc.ts:37](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/btc/signerBtc.ts#L37)
+signer/btc/signerBtc.ts:37
 
 ***
 
@@ -258,11 +258,11 @@ A promise that resolves to a string representing the identity
 
 #### Overrides
 
-[`Signer`](ccc.Class.Signer.md).[`getIdentity`](ccc.Class.Signer.md#getidentity)
+`Signer`.`getIdentity`
 
 #### Source
 
-[signer/btc/signerBtc.ts:53](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/btc/signerBtc.ts#L53)
+signer/btc/signerBtc.ts:53
 
 ***
 
@@ -280,11 +280,11 @@ A promise that resolves to a string representing the internal address.
 
 #### Overrides
 
-[`Signer`](ccc.Class.Signer.md).[`getInternalAddress`](ccc.Class.Signer.md#getinternaladdress)
+`Signer`.`getInternalAddress`
 
 #### Source
 
-[signer/btc/signerBtc.ts:44](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/btc/signerBtc.ts#L44)
+signer/btc/signerBtc.ts:44
 
 ***
 
@@ -308,17 +308,17 @@ A promise that resolves to the recommended address as a string.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`getRecommendedAddress`](ccc.Class.Signer.md#getrecommendedaddress)
+`Signer`.`getRecommendedAddress`
 
 #### Source
 
-[signer/signer/index.ts:144](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L144)
+signer/signer/index.ts:144
 
 ***
 
 ### getRecommendedAddressObj()
 
-> **getRecommendedAddressObj**(`_preference`?): `Promise`\<[`Address`](ccc.Class.Address.md)\>
+> **getRecommendedAddressObj**(`_preference`?): `Promise`\<`Address`\>
 
 Gets the recommended Address object for the signer.
 
@@ -330,17 +330,17 @@ Optional preference parameter.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)\>
+`Promise`\<`Address`\>
 
 A promise that resolves to the recommended Address object.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`getRecommendedAddressObj`](ccc.Class.Signer.md#getrecommendedaddressobj)
+`Signer`.`getRecommendedAddressObj`
 
 #### Source
 
-[signer/signer/index.ts:134](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L134)
+signer/signer/index.ts:134
 
 ***
 
@@ -358,39 +358,39 @@ A promise that resolves the connection status.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`isConnected`](ccc.Class.Signer.md#isconnected)
+`Signer`.`isConnected`
 
 #### Source
 
-[signer/signer/index.ts:103](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L103)
+signer/signer/index.ts:103
 
 ***
 
 ### prepareTransaction()
 
-> **prepareTransaction**(`txLike`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **prepareTransaction**(`txLike`): `Promise`\<`Transaction`\>
 
 prepare a transaction before signing. This method is not implemented and should be overridden by subclasses.
 
 #### Parameters
 
-• **txLike**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **txLike**: `TransactionLike`
 
 The transaction to prepare, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to the prepared Transaction object.
 
 #### Overrides
 
-[`Signer`](ccc.Class.Signer.md).[`prepareTransaction`](ccc.Class.Signer.md#preparetransaction)
+`Signer`.`prepareTransaction`
 
 #### Source
 
-[signer/btc/signerBtc.ts:81](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/btc/signerBtc.ts#L81)
+signer/btc/signerBtc.ts:81
 
 ***
 
@@ -402,7 +402,7 @@ Replace the current client.
 
 #### Parameters
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 #### Returns
 
@@ -410,11 +410,11 @@ Replace the current client.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`replaceClient`](ccc.Class.Signer.md#replaceclient)
+`Signer`.`replaceClient`
 
 #### Source
 
-[signer/signer/index.ts:80](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L80)
+signer/signer/index.ts:80
 
 ***
 
@@ -426,7 +426,7 @@ Sends a transaction after signing it.
 
 #### Parameters
 
-• **tx**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **tx**: `TransactionLike`
 
 The transaction to send, represented as a TransactionLike object.
 
@@ -438,33 +438,33 @@ A promise that resolves to the transaction hash as a Hex string.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`sendTransaction`](ccc.Class.Signer.md#sendtransaction)
+`Signer`.`sendTransaction`
 
 #### Source
 
-[signer/signer/index.ts:240](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L240)
+signer/signer/index.ts:240
 
 ***
 
 ### signMessage()
 
-> **signMessage**(`message`): `Promise`\<[`Signature`](ccc.Class.Signature.md)\>
+> **signMessage**(`message`): `Promise`\<`Signature`\>
 
 Signs a message.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
 #### Returns
 
-`Promise`\<[`Signature`](ccc.Class.Signature.md)\>
+`Promise`\<`Signature`\>
 
 A promise that resolves to the signature info.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`signMessage`](ccc.Class.Signer.md#signmessage)
+`Signer`.`signMessage`
 
 #### Throws
 
@@ -472,7 +472,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:177](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L177)
+signer/signer/index.ts:177
 
 ***
 
@@ -484,7 +484,7 @@ Signs a message and returns signature only. This method is not implemented and s
 
 #### Parameters
 
-• **\_**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **\_**: `BytesLike`
 
 The message to sign, as a string or BytesLike object.
 
@@ -496,7 +496,7 @@ A promise that resolves to the signature as a string.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`signMessageRaw`](ccc.Class.Signer.md#signmessageraw)
+`Signer`.`signMessageRaw`
 
 #### Throws
 
@@ -504,63 +504,63 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:192](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L192)
+signer/signer/index.ts:192
 
 ***
 
 ### signOnlyTransaction()
 
-> **signOnlyTransaction**(`txLike`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **signOnlyTransaction**(`txLike`): `Promise`\<`Transaction`\>
 
 Signs a transaction without modifying it.
 
 #### Parameters
 
-• **txLike**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **txLike**: `TransactionLike`
 
 The transaction to sign, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to a signed Transaction object.
 
 #### Overrides
 
-[`Signer`](ccc.Class.Signer.md).[`signOnlyTransaction`](ccc.Class.Signer.md#signonlytransaction)
+`Signer`.`signOnlyTransaction`
 
 #### Source
 
-[signer/btc/signerBtc.ts:94](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/btc/signerBtc.ts#L94)
+signer/btc/signerBtc.ts:94
 
 ***
 
 ### signTransaction()
 
-> **signTransaction**(`tx`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **signTransaction**(`tx`): `Promise`\<`Transaction`\>
 
 Signs a transaction.
 
 #### Parameters
 
-• **tx**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **tx**: `TransactionLike`
 
 The transaction to sign, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to the signed Transaction object.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`signTransaction`](ccc.Class.Signer.md#signtransaction)
+`Signer`.`signTransaction`
 
 #### Source
 
-[signer/signer/index.ts:250](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L250)
+signer/signer/index.ts:250
 
 ***
 
@@ -572,9 +572,9 @@ Verify a signature.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
-• **signature**: `string` \| [`Signature`](ccc.Class.Signature.md)
+• **signature**: `string` \| `Signature`
 
 #### Returns
 
@@ -584,7 +584,7 @@ A promise that resolves to the verification result.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`verifyMessage`](ccc.Class.Signer.md#verifymessage)
+`Signer`.`verifyMessage`
 
 #### Throws
 
@@ -592,7 +592,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:204](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L204)
+signer/signer/index.ts:204
 
 ***
 
@@ -604,7 +604,7 @@ Verify a string signature. This method is not implemented and should be overridd
 
 #### Parameters
 
-• **\_0**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **\_0**: `BytesLike`
 
 The original message.
 
@@ -620,7 +620,7 @@ A promise that resolves to the verification result.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`verifyMessageRaw`](ccc.Class.Signer.md#verifymessageraw)
+`Signer`.`verifyMessageRaw`
 
 #### Throws
 
@@ -628,7 +628,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:230](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L230)
+signer/signer/index.ts:230
 
 ***
 
@@ -638,9 +638,9 @@ Will throw an error if not implemented.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
-• **signature**: [`Signature`](ccc.Class.Signature.md)
+• **signature**: `Signature`
 
 #### Returns
 
@@ -648,8 +648,8 @@ Will throw an error if not implemented.
 
 #### Inherited from
 
-[`Signer`](ccc.Class.Signer.md).[`verifyMessage`](ccc.Class.Signer.md#verifymessage-1)
+`Signer`.`verifyMessage`
 
 #### Source
 
-[signer/signer/index.ts:49](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L49)
+signer/signer/index.ts:49

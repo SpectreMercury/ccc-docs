@@ -1,24 +1,24 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / depTypeFrom
+@ckb-ccc/core / ccc / depTypeFrom
 
 # Function: depTypeFrom()
 
-> **depTypeFrom**(`val`): [`DepType`](ccc.Type.DepType.md)
+> **depTypeFrom**(`val`): `DepType`
 
 Converts a DepTypeLike value to a DepType.
 
 ## Parameters
 
-• **val**: [`DepTypeLike`](ccc.Type.DepTypeLike.md)
+• **val**: `DepTypeLike`
 
 The value to convert, which can be a string, number, or bigint.
 
 ## Returns
 
-[`DepType`](ccc.Type.DepType.md)
+`DepType`
 
 The corresponding DepType.
 
@@ -35,4 +35,4 @@ const depType = depTypeFrom("depGroup"); // Outputs "depGroup"
 
 ## Source
 
-[ckb/transaction.ts:37](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L37)
+ckb/transaction.ts:37

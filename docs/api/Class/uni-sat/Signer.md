@@ -1,8 +1,8 @@
-[**@ckb-ccc/uni-sat**](README.md) • **Docs**
+**@ckb-ccc/uni-sat** • **Docs**
 
 ***
 
-[@ckb-ccc/uni-sat](README.md) / [UniSat](Namespace.UniSat.md) / Signer
+@ckb-ccc/uni-sat / UniSat / Signer
 
 # Class: Signer
 
@@ -16,7 +16,7 @@ Class representing a Bitcoin signer that extends SignerBtc from @ckb-ccc/core.
 
 ### new Signer()
 
-> **new Signer**(`client`, `provider`): [`Signer`](UniSat.Class.Signer.md)
+> **new Signer**(`client`, `provider`): `Signer`
 
 Creates an instance of Signer.
 
@@ -32,7 +32,7 @@ The provider instance.
 
 #### Returns
 
-[`Signer`](UniSat.Class.Signer.md)
+`Signer`
 
 #### Overrides
 
@@ -40,7 +40,7 @@ The provider instance.
 
 #### Source
 
-[uni-sat/src/signer.ts:15](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/uni-sat/src/signer.ts#L15)
+uni-sat/src/signer.ts:15
 
 ## Properties
 
@@ -66,7 +66,7 @@ The provider instance.
 
 #### Source
 
-[uni-sat/src/signer.ts:17](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/uni-sat/src/signer.ts#L17)
+uni-sat/src/signer.ts:17
 
 ## Accessors
 
@@ -130,7 +130,7 @@ A promise that resolves when the connection is established.
 
 #### Source
 
-[uni-sat/src/signer.ts:42](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/uni-sat/src/signer.ts#L42)
+uni-sat/src/signer.ts:42
 
 ***
 
@@ -240,7 +240,7 @@ A promise that resolves to the Bitcoin account address.
 
 #### Source
 
-[uni-sat/src/signer.ts:26](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/uni-sat/src/signer.ts#L26)
+uni-sat/src/signer.ts:26
 
 ***
 
@@ -262,7 +262,7 @@ A promise that resolves to the Bitcoin public key.
 
 #### Source
 
-[uni-sat/src/signer.ts:34](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/uni-sat/src/signer.ts#L34)
+uni-sat/src/signer.ts:34
 
 ***
 
@@ -384,7 +384,7 @@ A promise that resolves to true if connected, false otherwise.
 
 #### Source
 
-[uni-sat/src/signer.ts:50](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/uni-sat/src/signer.ts#L50)
+uni-sat/src/signer.ts:50
 
 ***
 
@@ -522,7 +522,7 @@ A promise that resolves to the signed message.
 
 #### Source
 
-[uni-sat/src/signer.ts:59](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/uni-sat/src/signer.ts#L59)
+uni-sat/src/signer.ts:59
 
 ***
 

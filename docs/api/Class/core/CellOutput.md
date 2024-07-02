@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / CellOutput
+@ckb-ccc/core / ccc / CellOutput
 
 # Class: CellOutput
 
@@ -10,7 +10,7 @@
 
 ### new CellOutput()
 
-> **new CellOutput**(`capacity`, `lock`, `type`?): [`CellOutput`](ccc.Class.CellOutput.md)
+> **new CellOutput**(`capacity`, `lock`, `type`?): `CellOutput`
 
 Creates an instance of CellOutput.
 
@@ -20,21 +20,21 @@ Creates an instance of CellOutput.
 
 The capacity of the cell.
 
-• **lock**: [`Script`](ccc.Class.Script.md)
+• **lock**: `Script`
 
 The lock script of the cell.
 
-• **type?**: [`Script`](ccc.Class.Script.md)
+• **type?**: `Script`
 
 The optional type script of the cell.
 
 #### Returns
 
-[`CellOutput`](ccc.Class.CellOutput.md)
+`CellOutput`
 
 #### Source
 
-[ckb/transaction.ts:192](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L192)
+ckb/transaction.ts:192
 
 ## Properties
 
@@ -46,31 +46,31 @@ The capacity of the cell.
 
 #### Source
 
-[ckb/transaction.ts:193](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L193)
+ckb/transaction.ts:193
 
 ***
 
 ### lock
 
-> **lock**: [`Script`](ccc.Class.Script.md)
+> **lock**: `Script`
 
 The lock script of the cell.
 
 #### Source
 
-[ckb/transaction.ts:194](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L194)
+ckb/transaction.ts:194
 
 ***
 
 ### type?
 
-> `optional` **type**: [`Script`](ccc.Class.Script.md)
+> `optional` **type**: `Script`
 
 The optional type script of the cell.
 
 #### Source
 
-[ckb/transaction.ts:195](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L195)
+ckb/transaction.ts:195
 
 ## Methods
 
@@ -112,7 +112,7 @@ An object representing the cell output in molecule data format.
 
 #### Source
 
-[ckb/transaction.ts:232](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L232)
+ckb/transaction.ts:232
 
 ***
 
@@ -136,25 +136,25 @@ const cellOutputBytes = cellOutput.toBytes();
 
 #### Source
 
-[ckb/transaction.ts:251](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L251)
+ckb/transaction.ts:251
 
 ***
 
 ### from()
 
-> `static` **from**(`cellOutput`): [`CellOutput`](ccc.Class.CellOutput.md)
+> `static` **from**(`cellOutput`): `CellOutput`
 
 Creates a CellOutput instance from a CellOutputLike object.
 
 #### Parameters
 
-• **cellOutput**: [`CellOutputLike`](ccc.Type.CellOutputLike.md)
+• **cellOutput**: `CellOutputLike`
 
 A CellOutputLike object or an instance of CellOutput.
 
 #### Returns
 
-[`CellOutput`](ccc.Class.CellOutput.md)
+`CellOutput`
 
 A CellOutput instance.
 
@@ -170,25 +170,25 @@ const cellOutput = CellOutput.from({
 
 #### Source
 
-[ckb/transaction.ts:214](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L214)
+ckb/transaction.ts:214
 
 ***
 
 ### fromBytes()
 
-> `static` **fromBytes**(`bytes`): [`CellOutput`](ccc.Class.CellOutput.md)
+> `static` **fromBytes**(`bytes`): `CellOutput`
 
 Creates a CellOutput instance from a byte-like value or molecule CellOutput.
 
 #### Parameters
 
-• **bytes**: [`BytesLike`](ccc.Type.BytesLike.md) \| `CellOutput`
+• **bytes**: `BytesLike` \| `CellOutput`
 
 The byte-like value or molecule CellOutput to convert.
 
 #### Returns
 
-[`CellOutput`](ccc.Class.CellOutput.md)
+`CellOutput`
 
 A CellOutput instance.
 
@@ -200,4 +200,4 @@ const cellOutput = CellOutput.fromBytes(new Uint8Array([/* cell output bytes */]
 
 #### Source
 
-[ckb/transaction.ts:267](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L267)
+ckb/transaction.ts:267

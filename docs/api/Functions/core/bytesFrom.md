@@ -1,18 +1,18 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / bytesFrom
+@ckb-ccc/core / ccc / bytesFrom
 
 # Function: bytesFrom()
 
-> **bytesFrom**(`bytes`, `encoding`?): [`Bytes`](ccc.Type.Bytes.md)
+> **bytesFrom**(`bytes`, `encoding`?): `Bytes`
 
 Converts various types of byte-like values to a Uint8Array.
 
 ## Parameters
 
-• **bytes**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **bytes**: `BytesLike`
 
 The byte-like value to convert. It can be a string, Uint8Array, ArrayBuffer, or number array.
 
@@ -22,7 +22,7 @@ Optional encoding to use if the input is a string. Defaults to hexadecimal if no
 
 ## Returns
 
-[`Bytes`](ccc.Type.Bytes.md)
+`Bytes`
 
 A Uint8Array representing the input bytes.
 
@@ -48,4 +48,4 @@ console.log(bytes4); // Outputs Uint8Array [1, 2, 255]
 
 ## Source
 
-[bytes/index.ts:80](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/bytes/index.ts#L80)
+bytes/index.ts:80

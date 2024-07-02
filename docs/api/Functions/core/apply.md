@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / apply
+@ckb-ccc/core / ccc / apply
 
 # Function: apply()
 
@@ -36,7 +36,7 @@ If the value is empty, it remains its type. Otherwise it will be transformed.
 
 ### Source
 
-[utils/index.ts:8](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/utils/index.ts#L8)
+utils/index.ts:8
 
 ## apply(transformer, value)
 
@@ -68,7 +68,7 @@ If the value is empty, it remains its type. Otherwise it will be transformed.
 
 ### Source
 
-[utils/index.ts:19](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/utils/index.ts#L19)
+utils/index.ts:19
 
 ## apply(transformer, value)
 
@@ -100,7 +100,7 @@ If the value is empty, it remains its type. Otherwise it will be transformed.
 
 ### Source
 
-[utils/index.ts:27](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/utils/index.ts#L27)
+utils/index.ts:27
 
 ## apply(transformer, value)
 
@@ -132,7 +132,7 @@ If the value is empty, it remains its type. Otherwise it will be transformed.
 
 ### Source
 
-[utils/index.ts:35](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/utils/index.ts#L35)
+utils/index.ts:35
 
 ## apply(transformer, value)
 
@@ -164,7 +164,7 @@ If the value is empty, it remains its type. Otherwise it will be transformed.
 
 ### Source
 
-[utils/index.ts:46](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/utils/index.ts#L46)
+utils/index.ts:46
 
 ## apply(transformer, value)
 
@@ -196,4 +196,4 @@ If the value is empty, it remains its type. Otherwise it will be transformed.
 
 ### Source
 
-[utils/index.ts:57](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/utils/index.ts#L57)
+utils/index.ts:57

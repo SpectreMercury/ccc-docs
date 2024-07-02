@@ -1,18 +1,18 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / fixedPointFrom
+@ckb-ccc/core / ccc / fixedPointFrom
 
 # Function: fixedPointFrom()
 
-> **fixedPointFrom**(`val`, `decimals`): [`FixedPoint`](ccc.Type.FixedPoint.md)
+> **fixedPointFrom**(`val`, `decimals`): `FixedPoint`
 
 Converts a FixedPointLike value to a FixedPoint (bigint) with fixed-point decimals.
 
 ## Parameters
 
-• **val**: [`FixedPointLike`](ccc.Type.FixedPointLike.md)
+• **val**: `FixedPointLike`
 
 The value to convert, which can be a bigint, string, or number.
 
@@ -22,7 +22,7 @@ The number of decimal places for the fixed-point representation. Default is 8.
 
 ## Returns
 
-[`FixedPoint`](ccc.Type.FixedPoint.md)
+`FixedPoint`
 
 A FixedPoint (bigint) representing the value with fixed-point decimals.
 
@@ -36,4 +36,4 @@ const fixedPointFromNumber = fixedPointFrom(1.23456789, 8); // Outputs 123456789
 
 ## Source
 
-[fixedPoint/index.ts:59](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/fixedPoint/index.ts#L59)
+fixedPoint/index.ts:59

@@ -1,8 +1,8 @@
-[**@ckb-ccc/joy-id**](README.md) • **Docs**
+**@ckb-ccc/joy-id** • **Docs**
 
 ***
 
-[@ckb-ccc/joy-id](README.md) / [JoyId](Namespace.JoyId.md) / EvmSigner
+@ckb-ccc/joy-id / JoyId / EvmSigner
 
 # Class: EvmSigner
 
@@ -16,7 +16,7 @@ Class representing an EVM signer that extends SignerEvm from @ckb-ccc/core.
 
 ### new EvmSigner()
 
-> **new EvmSigner**(`client`, `name`, `icon`, `appUri`?, `connectionsRepo`?): [`EvmSigner`](JoyId.Class.EvmSigner.md)
+> **new EvmSigner**(`client`, `name`, `icon`, `appUri`?, `connectionsRepo`?): `EvmSigner`
 
 Creates an instance of EvmSigner.
 
@@ -44,7 +44,7 @@ The connections repository.
 
 #### Returns
 
-[`EvmSigner`](JoyId.Class.EvmSigner.md)
+`EvmSigner`
 
 #### Overrides
 
@@ -52,7 +52,7 @@ The connections repository.
 
 #### Source
 
-[joy-id/src/evm/index.ts:40](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L40)
+joy-id/src/evm/index.ts:40
 
 ## Properties
 
@@ -64,7 +64,7 @@ The application URI.
 
 #### Source
 
-[joy-id/src/evm/index.ts:44](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L44)
+joy-id/src/evm/index.ts:44
 
 ***
 
@@ -88,7 +88,7 @@ core/dist/signer/signer/index.d.ts:32
 
 #### Source
 
-[joy-id/src/evm/index.ts:16](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L16)
+joy-id/src/evm/index.ts:16
 
 ***
 
@@ -100,7 +100,7 @@ The connections repository.
 
 #### Source
 
-[joy-id/src/evm/index.ts:45](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L45)
+joy-id/src/evm/index.ts:45
 
 ***
 
@@ -112,7 +112,7 @@ The icon URL of the signer.
 
 #### Source
 
-[joy-id/src/evm/index.ts:43](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L43)
+joy-id/src/evm/index.ts:43
 
 ***
 
@@ -124,7 +124,7 @@ The name of the signer.
 
 #### Source
 
-[joy-id/src/evm/index.ts:42](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L42)
+joy-id/src/evm/index.ts:42
 
 ## Accessors
 
@@ -258,7 +258,7 @@ Will throw an error if not connected.
 
 #### Source
 
-[joy-id/src/evm/index.ts:24](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L24)
+joy-id/src/evm/index.ts:24
 
 ***
 
@@ -280,7 +280,7 @@ A promise that resolves when the connection is established.
 
 #### Source
 
-[joy-id/src/evm/index.ts:77](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L77)
+joy-id/src/evm/index.ts:77
 
 ***
 
@@ -406,7 +406,7 @@ The configuration object.
 
 #### Source
 
-[joy-id/src/evm/index.ts:55](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L55)
+joy-id/src/evm/index.ts:55
 
 ***
 
@@ -428,7 +428,7 @@ A promise that resolves to the EVM account address.
 
 #### Source
 
-[joy-id/src/evm/index.ts:69](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L69)
+joy-id/src/evm/index.ts:69
 
 ***
 
@@ -550,7 +550,7 @@ A promise that resolves to true if connected, false otherwise.
 
 #### Source
 
-[joy-id/src/evm/index.ts:97](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L97)
+joy-id/src/evm/index.ts:97
 
 ***
 
@@ -618,7 +618,7 @@ Restores the previous connection.
 
 #### Source
 
-[joy-id/src/evm/index.ts:153](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L153)
+joy-id/src/evm/index.ts:153
 
 ***
 
@@ -634,7 +634,7 @@ Saves the current connection.
 
 #### Source
 
-[joy-id/src/evm/index.ts:138](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L138)
+joy-id/src/evm/index.ts:138
 
 ***
 
@@ -720,7 +720,7 @@ A promise that resolves to the signed message.
 
 #### Source
 
-[joy-id/src/evm/index.ts:110](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/evm/index.ts#L110)
+joy-id/src/evm/index.ts:110
 
 ***
 

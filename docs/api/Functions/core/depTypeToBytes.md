@@ -1,24 +1,24 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / depTypeToBytes
+@ckb-ccc/core / ccc / depTypeToBytes
 
 # Function: depTypeToBytes()
 
-> **depTypeToBytes**(`depType`): [`Bytes`](ccc.Type.Bytes.md)
+> **depTypeToBytes**(`depType`): `Bytes`
 
 Converts a DepTypeLike value to its corresponding byte representation.
 
 ## Parameters
 
-• **depType**: [`DepTypeLike`](ccc.Type.DepTypeLike.md)
+• **depType**: `DepTypeLike`
 
 The dep type value to convert.
 
 ## Returns
 
-[`Bytes`](ccc.Type.Bytes.md)
+`Bytes`
 
 A Uint8Array containing the byte representation of the dep type.
 
@@ -30,4 +30,4 @@ const depTypeBytes = depTypeToBytes("code"); // Outputs Uint8Array [1]
 
 ## Source
 
-[ckb/transaction.ts:67](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L67)
+ckb/transaction.ts:67

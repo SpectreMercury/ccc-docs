@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / SignerEvmAddressReadonly
+@ckb-ccc/core / ccc / SignerEvmAddressReadonly
 
 # Class: SignerEvmAddressReadonly
 
@@ -11,37 +11,37 @@ This class does not support signing operations.
 
 ## Extends
 
-- [`SignerEvm`](ccc.Class.SignerEvm.md)
+- `SignerEvm`
 
 ## Constructors
 
 ### new SignerEvmAddressReadonly()
 
-> **new SignerEvmAddressReadonly**(`client`, `address`): [`SignerEvmAddressReadonly`](ccc.Class.SignerEvmAddressReadonly.md)
+> **new SignerEvmAddressReadonly**(`client`, `address`): `SignerEvmAddressReadonly`
 
 Creates an instance of SignerEvmAddressReadonly.
 
 #### Parameters
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 The client instance used for communication.
 
-• **address**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **address**: `BytesLike`
 
 The EVM address associated with the signer.
 
 #### Returns
 
-[`SignerEvmAddressReadonly`](ccc.Class.SignerEvmAddressReadonly.md)
+`SignerEvmAddressReadonly`
 
 #### Overrides
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`constructor`](ccc.Class.SignerEvm.md#constructors)
+`SignerEvm`.`constructor`
 
 #### Source
 
-[signer/evm/signerEvmAddressReadonly.ts:18](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvmAddressReadonly.ts#L18)
+signer/evm/signerEvmAddressReadonly.ts:18
 
 ## Properties
 
@@ -51,69 +51,69 @@ The EVM address associated with the signer.
 
 #### Source
 
-[signer/evm/signerEvmAddressReadonly.ts:10](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvmAddressReadonly.ts#L10)
+signer/evm/signerEvmAddressReadonly.ts:10
 
 ***
 
 ### client\_
 
-> `protected` **client\_**: [`Client`](ccc.Class.Client.md)
+> `protected` **client\_**: `Client`
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`client_`](ccc.Class.SignerEvm.md#client_)
+`SignerEvm`.`client_`
 
 #### Source
 
-[signer/signer/index.ts:40](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L40)
+signer/signer/index.ts:40
 
 ## Accessors
 
 ### client
 
-> `get` **client**(): [`Client`](ccc.Class.Client.md)
+> `get` **client**(): `Client`
 
 #### Returns
 
-[`Client`](ccc.Class.Client.md)
+`Client`
 
 #### Source
 
-[signer/signer/index.ts:45](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L45)
+signer/signer/index.ts:45
 
 ***
 
 ### signType
 
-> `get` **signType**(): [`SignerSignType`](ccc.Enumeration.SignerSignType.md)
+> `get` **signType**(): `SignerSignType`
 
 #### Returns
 
-[`SignerSignType`](ccc.Enumeration.SignerSignType.md)
+`SignerSignType`
 
 #### Source
 
-[signer/evm/signerEvm.ts:19](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvm.ts#L19)
+signer/evm/signerEvm.ts:19
 
 ***
 
 ### type
 
-> `get` **type**(): [`SignerType`](ccc.Enumeration.SignerType.md)
+> `get` **type**(): `SignerType`
 
 #### Returns
 
-[`SignerType`](ccc.Enumeration.SignerType.md)
+`SignerType`
 
 #### Source
 
-[signer/evm/signerEvm.ts:15](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvm.ts#L15)
+signer/evm/signerEvm.ts:15
 
 ## Methods
 
 ### \_getOmniLockEvmAddressObj()
 
-> **\_getOmniLockEvmAddressObj**(`account`): `Promise`\<[`Address`](ccc.Class.Address.md)\>
+> **\_getOmniLockEvmAddressObj**(`account`): `Promise`\<`Address`\>
 
 #### Parameters
 
@@ -121,21 +121,21 @@ The EVM address associated with the signer.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)\>
+`Promise`\<`Address`\>
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`_getOmniLockEvmAddressObj`](ccc.Class.SignerEvm.md#_getomnilockevmaddressobj)
+`SignerEvm`.`_getOmniLockEvmAddressObj`
 
 #### Source
 
-[signer/evm/signerEvm.ts:52](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvm.ts#L52)
+signer/evm/signerEvm.ts:52
 
 ***
 
 ### \_getOmniLockOldEvmAddressObj()
 
-> **\_getOmniLockOldEvmAddressObj**(`account`): `Promise`\<[`Address`](ccc.Class.Address.md)\>
+> **\_getOmniLockOldEvmAddressObj**(`account`): `Promise`\<`Address`\>
 
 #### Parameters
 
@@ -143,41 +143,41 @@ The EVM address associated with the signer.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)\>
+`Promise`\<`Address`\>
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`_getOmniLockOldEvmAddressObj`](ccc.Class.SignerEvm.md#_getomnilockoldevmaddressobj)
+`SignerEvm`.`_getOmniLockOldEvmAddressObj`
 
 #### Source
 
-[signer/evm/signerEvm.ts:60](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvm.ts#L60)
+signer/evm/signerEvm.ts:60
 
 ***
 
 ### \_signOmniLockScriptForTransaction()
 
-> **\_signOmniLockScriptForTransaction**(`tx`, `script`, `messageTransformer`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **\_signOmniLockScriptForTransaction**(`tx`, `script`, `messageTransformer`): `Promise`\<`Transaction`\>
 
 #### Parameters
 
-• **tx**: [`Transaction`](ccc.Class.Transaction.md)
+• **tx**: `Transaction`
 
-• **script**: [`Script`](ccc.Class.Script.md)
+• **script**: `Script`
 
 • **messageTransformer**
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`_signOmniLockScriptForTransaction`](ccc.Class.SignerEvm.md#_signomnilockscriptfortransaction)
+`SignerEvm`.`_signOmniLockScriptForTransaction`
 
 #### Source
 
-[signer/evm/signerEvm.ts:111](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvm.ts#L111)
+signer/evm/signerEvm.ts:111
 
 ***
 
@@ -195,7 +195,7 @@ A promise that resolves when the connection is complete.
 
 #### Overrides
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`connect`](ccc.Class.SignerEvm.md#connect)
+`SignerEvm`.`connect`
 
 #### Example
 
@@ -205,7 +205,7 @@ await signer.connect();
 
 #### Source
 
-[signer/evm/signerEvmAddressReadonly.ts:35](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvmAddressReadonly.ts#L35)
+signer/evm/signerEvmAddressReadonly.ts:35
 
 ***
 
@@ -223,33 +223,33 @@ A promise that resolves when disconnected.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`disconnect`](ccc.Class.SignerEvm.md#disconnect)
+`SignerEvm`.`disconnect`
 
 #### Source
 
-[signer/signer/index.ts:96](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L96)
+signer/signer/index.ts:96
 
 ***
 
 ### getAddressObjs()
 
-> **getAddressObjs**(): `Promise`\<[`Address`](ccc.Class.Address.md)[]\>
+> **getAddressObjs**(): `Promise`\<`Address`[]\>
 
 Gets an array of Address objects representing the known script addresses for the signer.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)[]\>
+`Promise`\<`Address`[]\>
 
 A promise that resolves to an array of Address objects.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`getAddressObjs`](ccc.Class.SignerEvm.md#getaddressobjs)
+`SignerEvm`.`getAddressObjs`
 
 #### Source
 
-[signer/evm/signerEvm.ts:44](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvm.ts#L44)
+signer/evm/signerEvm.ts:44
 
 ***
 
@@ -267,11 +267,11 @@ A promise that resolves to an array of addresses as strings.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`getAddresses`](ccc.Class.SignerEvm.md#getaddresses)
+`SignerEvm`.`getAddresses`
 
 #### Source
 
-[signer/signer/index.ts:153](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L153)
+signer/signer/index.ts:153
 
 ***
 
@@ -289,11 +289,11 @@ A promise that resolves to the balance
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`getBalance`](ccc.Class.SignerEvm.md#getbalance)
+`SignerEvm`.`getBalance`
 
 #### Source
 
-[signer/signer/index.ts:164](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L164)
+signer/signer/index.ts:164
 
 ***
 
@@ -311,7 +311,7 @@ A promise that resolves to a string representing the EVM account.
 
 #### Overrides
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`getEvmAccount`](ccc.Class.SignerEvm.md#getevmaccount)
+`SignerEvm`.`getEvmAccount`
 
 #### Example
 
@@ -321,7 +321,7 @@ const account = await signer.getEvmAccount(); // Outputs the EVM account
 
 #### Source
 
-[signer/evm/signerEvmAddressReadonly.ts:56](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvmAddressReadonly.ts#L56)
+signer/evm/signerEvmAddressReadonly.ts:56
 
 ***
 
@@ -339,11 +339,11 @@ A promise that resolves to a string representing the identity
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`getIdentity`](ccc.Class.SignerEvm.md#getidentity)
+`SignerEvm`.`getIdentity`
 
 #### Source
 
-[signer/signer/index.ts:117](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L117)
+signer/signer/index.ts:117
 
 ***
 
@@ -361,11 +361,11 @@ A promise that resolves to a string representing the internal address.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`getInternalAddress`](ccc.Class.SignerEvm.md#getinternaladdress)
+`SignerEvm`.`getInternalAddress`
 
 #### Source
 
-[signer/evm/signerEvm.ts:35](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvm.ts#L35)
+signer/evm/signerEvm.ts:35
 
 ***
 
@@ -389,17 +389,17 @@ A promise that resolves to the recommended address as a string.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`getRecommendedAddress`](ccc.Class.SignerEvm.md#getrecommendedaddress)
+`SignerEvm`.`getRecommendedAddress`
 
 #### Source
 
-[signer/signer/index.ts:144](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L144)
+signer/signer/index.ts:144
 
 ***
 
 ### getRecommendedAddressObj()
 
-> **getRecommendedAddressObj**(`_preference`?): `Promise`\<[`Address`](ccc.Class.Address.md)\>
+> **getRecommendedAddressObj**(`_preference`?): `Promise`\<`Address`\>
 
 Gets the recommended Address object for the signer.
 
@@ -411,17 +411,17 @@ Optional preference parameter.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)\>
+`Promise`\<`Address`\>
 
 A promise that resolves to the recommended Address object.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`getRecommendedAddressObj`](ccc.Class.SignerEvm.md#getrecommendedaddressobj)
+`SignerEvm`.`getRecommendedAddressObj`
 
 #### Source
 
-[signer/signer/index.ts:134](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L134)
+signer/signer/index.ts:134
 
 ***
 
@@ -439,39 +439,39 @@ A promise that resolves the connection status.
 
 #### Overrides
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`isConnected`](ccc.Class.SignerEvm.md#isconnected)
+`SignerEvm`.`isConnected`
 
 #### Source
 
-[signer/evm/signerEvmAddressReadonly.ts:42](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvmAddressReadonly.ts#L42)
+signer/evm/signerEvmAddressReadonly.ts:42
 
 ***
 
 ### prepareTransaction()
 
-> **prepareTransaction**(`txLike`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **prepareTransaction**(`txLike`): `Promise`\<`Transaction`\>
 
 prepare a transaction before signing. This method is not implemented and should be overridden by subclasses.
 
 #### Parameters
 
-• **txLike**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **txLike**: `TransactionLike`
 
 The transaction to prepare, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to the prepared Transaction object.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`prepareTransaction`](ccc.Class.SignerEvm.md#preparetransaction)
+`SignerEvm`.`prepareTransaction`
 
 #### Source
 
-[signer/evm/signerEvm.ts:74](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvm.ts#L74)
+signer/evm/signerEvm.ts:74
 
 ***
 
@@ -483,7 +483,7 @@ Replace the current client.
 
 #### Parameters
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 #### Returns
 
@@ -491,11 +491,11 @@ Replace the current client.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`replaceClient`](ccc.Class.SignerEvm.md#replaceclient)
+`SignerEvm`.`replaceClient`
 
 #### Source
 
-[signer/signer/index.ts:80](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L80)
+signer/signer/index.ts:80
 
 ***
 
@@ -507,7 +507,7 @@ Sends a transaction after signing it.
 
 #### Parameters
 
-• **tx**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **tx**: `TransactionLike`
 
 The transaction to send, represented as a TransactionLike object.
 
@@ -519,33 +519,33 @@ A promise that resolves to the transaction hash as a Hex string.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`sendTransaction`](ccc.Class.SignerEvm.md#sendtransaction)
+`SignerEvm`.`sendTransaction`
 
 #### Source
 
-[signer/signer/index.ts:240](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L240)
+signer/signer/index.ts:240
 
 ***
 
 ### signMessage()
 
-> **signMessage**(`message`): `Promise`\<[`Signature`](ccc.Class.Signature.md)\>
+> **signMessage**(`message`): `Promise`\<`Signature`\>
 
 Signs a message.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
 #### Returns
 
-`Promise`\<[`Signature`](ccc.Class.Signature.md)\>
+`Promise`\<`Signature`\>
 
 A promise that resolves to the signature info.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`signMessage`](ccc.Class.SignerEvm.md#signmessage)
+`SignerEvm`.`signMessage`
 
 #### Throws
 
@@ -553,7 +553,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:177](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L177)
+signer/signer/index.ts:177
 
 ***
 
@@ -565,7 +565,7 @@ Signs a message and returns signature only. This method is not implemented and s
 
 #### Parameters
 
-• **\_**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **\_**: `BytesLike`
 
 The message to sign, as a string or BytesLike object.
 
@@ -577,7 +577,7 @@ A promise that resolves to the signature as a string.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`signMessageRaw`](ccc.Class.SignerEvm.md#signmessageraw)
+`SignerEvm`.`signMessageRaw`
 
 #### Throws
 
@@ -585,63 +585,63 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:192](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L192)
+signer/signer/index.ts:192
 
 ***
 
 ### signOnlyTransaction()
 
-> **signOnlyTransaction**(`txLike`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **signOnlyTransaction**(`txLike`): `Promise`\<`Transaction`\>
 
 Signs a transaction without modifying it.
 
 #### Parameters
 
-• **txLike**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **txLike**: `TransactionLike`
 
 The transaction to sign, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to a signed Transaction object.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`signOnlyTransaction`](ccc.Class.SignerEvm.md#signonlytransaction)
+`SignerEvm`.`signOnlyTransaction`
 
 #### Source
 
-[signer/evm/signerEvm.ts:89](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/signerEvm.ts#L89)
+signer/evm/signerEvm.ts:89
 
 ***
 
 ### signTransaction()
 
-> **signTransaction**(`tx`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **signTransaction**(`tx`): `Promise`\<`Transaction`\>
 
 Signs a transaction.
 
 #### Parameters
 
-• **tx**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **tx**: `TransactionLike`
 
 The transaction to sign, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to the signed Transaction object.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`signTransaction`](ccc.Class.SignerEvm.md#signtransaction)
+`SignerEvm`.`signTransaction`
 
 #### Source
 
-[signer/signer/index.ts:250](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L250)
+signer/signer/index.ts:250
 
 ***
 
@@ -653,9 +653,9 @@ Verify a signature.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
-• **signature**: `string` \| [`Signature`](ccc.Class.Signature.md)
+• **signature**: `string` \| `Signature`
 
 #### Returns
 
@@ -665,7 +665,7 @@ A promise that resolves to the verification result.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`verifyMessage`](ccc.Class.SignerEvm.md#verifymessage)
+`SignerEvm`.`verifyMessage`
 
 #### Throws
 
@@ -673,7 +673,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:204](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L204)
+signer/signer/index.ts:204
 
 ***
 
@@ -685,7 +685,7 @@ Verify a string signature. This method is not implemented and should be overridd
 
 #### Parameters
 
-• **\_0**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **\_0**: `BytesLike`
 
 The original message.
 
@@ -701,7 +701,7 @@ A promise that resolves to the verification result.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`verifyMessageRaw`](ccc.Class.SignerEvm.md#verifymessageraw)
+`SignerEvm`.`verifyMessageRaw`
 
 #### Throws
 
@@ -709,7 +709,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:230](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L230)
+signer/signer/index.ts:230
 
 ***
 
@@ -719,9 +719,9 @@ Will throw an error if not implemented.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
-• **signature**: [`Signature`](ccc.Class.Signature.md)
+• **signature**: `Signature`
 
 #### Returns
 
@@ -729,8 +729,8 @@ Will throw an error if not implemented.
 
 #### Inherited from
 
-[`SignerEvm`](ccc.Class.SignerEvm.md).[`verifyMessage`](ccc.Class.SignerEvm.md#verifymessage-1)
+`SignerEvm`.`verifyMessage`
 
 #### Source
 
-[signer/signer/index.ts:49](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L49)
+signer/signer/index.ts:49

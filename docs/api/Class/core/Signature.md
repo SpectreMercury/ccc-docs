@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / Signature
+@ckb-ccc/core / ccc / Signature
 
 # Class: Signature
 
@@ -10,7 +10,7 @@
 
 ### new Signature()
 
-> **new Signature**(`signature`, `identity`, `signType`): [`Signature`](ccc.Class.Signature.md)
+> **new Signature**(`signature`, `identity`, `signType`): `Signature`
 
 #### Parameters
 
@@ -18,15 +18,15 @@
 
 • **identity**: `string`
 
-• **signType**: [`SignerSignType`](ccc.Enumeration.SignerSignType.md)
+• **signType**: `SignerSignType`
 
 #### Returns
 
-[`Signature`](ccc.Class.Signature.md)
+`Signature`
 
 #### Source
 
-[signer/signer/index.ts:28](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L28)
+signer/signer/index.ts:28
 
 ## Properties
 
@@ -36,17 +36,17 @@
 
 #### Source
 
-[signer/signer/index.ts:30](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L30)
+signer/signer/index.ts:30
 
 ***
 
 ### signType
 
-> **signType**: [`SignerSignType`](ccc.Enumeration.SignerSignType.md)
+> **signType**: `SignerSignType`
 
 #### Source
 
-[signer/signer/index.ts:31](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L31)
+signer/signer/index.ts:31
 
 ***
 
@@ -56,4 +56,4 @@
 
 #### Source
 
-[signer/signer/index.ts:29](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L29)
+signer/signer/index.ts:29

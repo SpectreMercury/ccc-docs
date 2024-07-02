@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / Hasher
+@ckb-ccc/core / ccc / Hasher
 
 # Class: Hasher
 
@@ -10,7 +10,7 @@
 
 ### new Hasher()
 
-> **new Hasher**(`outLength`, `personal`): [`Hasher`](ccc.Class.Hasher.md)
+> **new Hasher**(`outLength`, `personal`): `Hasher`
 
 Creates an instance of Hasher.
 
@@ -26,11 +26,11 @@ The personal string for the Blake2b algorithm. Default is CKB_BLAKE2B_PERSONAL.
 
 #### Returns
 
-[`Hasher`](ccc.Class.Hasher.md)
+`Hasher`
 
 #### Source
 
-[hasher/index.ts:16](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/hasher/index.ts#L16)
+hasher/index.ts:16
 
 ## Properties
 
@@ -40,7 +40,7 @@ The personal string for the Blake2b algorithm. Default is CKB_BLAKE2B_PERSONAL.
 
 #### Source
 
-[hasher/index.ts:7](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/hasher/index.ts#L7)
+hasher/index.ts:7
 
 ## Methods
 
@@ -66,25 +66,25 @@ const hash = hasher.digest(); // Outputs something like "0x..."
 
 #### Source
 
-[hasher/index.ts:57](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/hasher/index.ts#L57)
+hasher/index.ts:57
 
 ***
 
 ### update()
 
-> **update**(`data`): [`Hasher`](ccc.Class.Hasher.md)
+> **update**(`data`): `Hasher`
 
 Updates the hash with the given data.
 
 #### Parameters
 
-• **data**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **data**: `BytesLike`
 
 The data to update the hash with.
 
 #### Returns
 
-[`Hasher`](ccc.Class.Hasher.md)
+`Hasher`
 
 The current Hasher instance for chaining.
 
@@ -98,4 +98,4 @@ const hash = hasher.digest();
 
 #### Source
 
-[hasher/index.ts:39](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/hasher/index.ts#L39)
+hasher/index.ts:39

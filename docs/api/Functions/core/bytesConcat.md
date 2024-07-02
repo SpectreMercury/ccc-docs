@@ -1,24 +1,24 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / bytesConcat
+@ckb-ccc/core / ccc / bytesConcat
 
 # Function: bytesConcat()
 
-> **bytesConcat**(...`args`): [`Bytes`](ccc.Type.Bytes.md)
+> **bytesConcat**(...`args`): `Bytes`
 
 Concatenates multiple byte-like arrays into a single byte array.
 
 ## Parameters
 
-• ...**args**: [`BytesLike`](ccc.Type.BytesLike.md)[]
+• ...**args**: `BytesLike`[]
 
 The byte-like arrays to concatenate.
 
 ## Returns
 
-[`Bytes`](ccc.Type.Bytes.md)
+`Bytes`
 
 A Uint8Array containing the concatenated bytes.
 
@@ -36,4 +36,4 @@ console.log(concatenatedBytes); // Outputs Uint8Array [1, 2, 3, 4, /* bytes of "
 
 ## Source
 
-[bytes/index.ts:25](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/bytes/index.ts#L25)
+bytes/index.ts:25

@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / Transaction
+@ckb-ccc/core / ccc / Transaction
 
 # Class: Transaction
 
@@ -10,7 +10,7 @@
 
 ### new Transaction()
 
-> **new Transaction**(`version`, `cellDeps`, `headerDeps`, `inputs`, `outputs`, `outputsData`, `witnesses`): [`Transaction`](ccc.Class.Transaction.md)
+> **new Transaction**(`version`, `cellDeps`, `headerDeps`, `inputs`, `outputs`, `outputsData`, `witnesses`): `Transaction`
 
 Creates an instance of Transaction.
 
@@ -20,7 +20,7 @@ Creates an instance of Transaction.
 
 The version of the transaction.
 
-• **cellDeps**: [`CellDep`](ccc.Class.CellDep.md)[]
+• **cellDeps**: `CellDep`[]
 
 The cell dependencies of the transaction.
 
@@ -28,11 +28,11 @@ The cell dependencies of the transaction.
 
 The header dependencies of the transaction.
 
-• **inputs**: [`CellInput`](ccc.Class.CellInput.md)[]
+• **inputs**: `CellInput`[]
 
 The inputs of the transaction.
 
-• **outputs**: [`CellOutput`](ccc.Class.CellOutput.md)[]
+• **outputs**: `CellOutput`[]
 
 The outputs of the transaction.
 
@@ -46,23 +46,23 @@ The witnesses of the transaction.
 
 #### Returns
 
-[`Transaction`](ccc.Class.Transaction.md)
+`Transaction`
 
 #### Source
 
-[ckb/transaction.ts:679](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L679)
+ckb/transaction.ts:679
 
 ## Properties
 
 ### cellDeps
 
-> **cellDeps**: [`CellDep`](ccc.Class.CellDep.md)[]
+> **cellDeps**: `CellDep`[]
 
 The cell dependencies of the transaction.
 
 #### Source
 
-[ckb/transaction.ts:681](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L681)
+ckb/transaction.ts:681
 
 ***
 
@@ -74,31 +74,31 @@ The header dependencies of the transaction.
 
 #### Source
 
-[ckb/transaction.ts:682](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L682)
+ckb/transaction.ts:682
 
 ***
 
 ### inputs
 
-> **inputs**: [`CellInput`](ccc.Class.CellInput.md)[]
+> **inputs**: `CellInput`[]
 
 The inputs of the transaction.
 
 #### Source
 
-[ckb/transaction.ts:683](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L683)
+ckb/transaction.ts:683
 
 ***
 
 ### outputs
 
-> **outputs**: [`CellOutput`](ccc.Class.CellOutput.md)[]
+> **outputs**: `CellOutput`[]
 
 The outputs of the transaction.
 
 #### Source
 
-[ckb/transaction.ts:684](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L684)
+ckb/transaction.ts:684
 
 ***
 
@@ -110,7 +110,7 @@ The data associated with the outputs.
 
 #### Source
 
-[ckb/transaction.ts:685](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L685)
+ckb/transaction.ts:685
 
 ***
 
@@ -122,7 +122,7 @@ The version of the transaction.
 
 #### Source
 
-[ckb/transaction.ts:680](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L680)
+ckb/transaction.ts:680
 
 ***
 
@@ -134,7 +134,7 @@ The witnesses of the transaction.
 
 #### Source
 
-[ckb/transaction.ts:686](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L686)
+ckb/transaction.ts:686
 
 ## Methods
 
@@ -146,11 +146,11 @@ Find the first occurrence of a input with the specified lock
 
 #### Parameters
 
-• **scriptLike**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **scriptLike**: `ScriptLike`
 
 The script associated with the transaction, represented as a ScriptLike object.
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 The client for complete extra infos in the transaction.
 
@@ -168,7 +168,7 @@ const index = await tx.findInputIndexByLock(scriptLike, client);
 
 #### Source
 
-[ckb/transaction.ts:915](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L915)
+ckb/transaction.ts:915
 
 ***
 
@@ -180,11 +180,11 @@ Computes the signing hash information for a given script.
 
 #### Parameters
 
-• **scriptLike**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **scriptLike**: `ScriptLike`
 
 The script associated with the transaction, represented as a ScriptLike object.
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 The client for complete extra infos in the transaction.
 
@@ -207,13 +207,13 @@ if (signHashInfo) {
 
 #### Source
 
-[ckb/transaction.ts:860](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L860)
+ckb/transaction.ts:860
 
 ***
 
 ### getWitnessArgsAt()
 
-> **getWitnessArgsAt**(`index`): `undefined` \| [`WitnessArgs`](ccc.Class.WitnessArgs.md)
+> **getWitnessArgsAt**(`index`): `undefined` \| `WitnessArgs`
 
 Get witness at index as WitnessArgs
 
@@ -225,7 +225,7 @@ The index of the witness.
 
 #### Returns
 
-`undefined` \| [`WitnessArgs`](ccc.Class.WitnessArgs.md)
+`undefined` \| `WitnessArgs`
 
 The witness parsed as WitnessArgs.
 
@@ -237,7 +237,7 @@ const witnessArgs = await tx.getWitnessArgsAt(0);
 
 #### Source
 
-[ckb/transaction.ts:945](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L945)
+ckb/transaction.ts:945
 
 ***
 
@@ -261,7 +261,7 @@ const txHash = transaction.hash();
 
 #### Source
 
-[ckb/transaction.ts:821](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L821)
+ckb/transaction.ts:821
 
 ***
 
@@ -273,7 +273,7 @@ Prepare dummy witness for sighash all method
 
 #### Parameters
 
-• **scriptLike**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **scriptLike**: `ScriptLike`
 
 The script associated with the transaction, represented as a ScriptLike object.
 
@@ -281,7 +281,7 @@ The script associated with the transaction, represented as a ScriptLike object.
 
 The length of dummy lock bytes.
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 The client for complete extra infos in the transaction.
 
@@ -299,7 +299,7 @@ await tx.prepareSighashAllWitness(scriptLike, 85, client);
 
 #### Source
 
-[ckb/transaction.ts:990](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L990)
+ckb/transaction.ts:990
 
 ***
 
@@ -323,7 +323,7 @@ const rawTxBytes = transaction.rawToBytes();
 
 #### Source
 
-[ckb/transaction.ts:797](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L797)
+ckb/transaction.ts:797
 
 ***
 
@@ -339,7 +339,7 @@ Set witness at index by WitnessArgs
 
 The index of the witness.
 
-• **witness**: [`WitnessArgs`](ccc.Class.WitnessArgs.md)
+• **witness**: `WitnessArgs`
 
 The WitnessArgs to set.
 
@@ -357,7 +357,7 @@ await tx.setWitnessArgsAt(0, witnessArgs);
 
 #### Source
 
-[ckb/transaction.ts:964](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L964)
+ckb/transaction.ts:964
 
 ***
 
@@ -371,19 +371,19 @@ await tx.setWitnessArgsAt(0, witnessArgs);
 
 #### Source
 
-[ckb/transaction.ts:777](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L777)
+ckb/transaction.ts:777
 
 ***
 
 ### default()
 
-> `static` **default**(): [`Transaction`](ccc.Class.Transaction.md)
+> `static` **default**(): `Transaction`
 
 Creates a default Transaction instance with empty fields.
 
 #### Returns
 
-[`Transaction`](ccc.Class.Transaction.md)
+`Transaction`
 
 A default Transaction instance.
 
@@ -395,25 +395,25 @@ const defaultTx = Transaction.default();
 
 #### Source
 
-[ckb/transaction.ts:700](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L700)
+ckb/transaction.ts:700
 
 ***
 
 ### from()
 
-> `static` **from**(`tx`): [`Transaction`](ccc.Class.Transaction.md)
+> `static` **from**(`tx`): `Transaction`
 
 Creates a Transaction instance from a TransactionLike object.
 
 #### Parameters
 
-• **tx**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **tx**: `TransactionLike`
 
 A TransactionLike object or an instance of Transaction.
 
 #### Returns
 
-[`Transaction`](ccc.Class.Transaction.md)
+`Transaction`
 
 A Transaction instance.
 
@@ -433,13 +433,13 @@ const transaction = Transaction.from({
 
 #### Source
 
-[ckb/transaction.ts:724](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L724)
+ckb/transaction.ts:724
 
 ***
 
 ### fromLumosSkeleton()
 
-> `static` **fromLumosSkeleton**(`skeleton`): [`Transaction`](ccc.Class.Transaction.md)
+> `static` **fromLumosSkeleton**(`skeleton`): `Transaction`
 
 Creates a Transaction instance from a Lumos skeleton.
 
@@ -451,7 +451,7 @@ The Lumos transaction skeleton.
 
 #### Returns
 
-[`Transaction`](ccc.Class.Transaction.md)
+`Transaction`
 
 A Transaction instance.
 
@@ -467,7 +467,7 @@ const transaction = Transaction.fromLumosSkeleton(skeleton);
 
 #### Source
 
-[ckb/transaction.ts:754](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L754)
+ckb/transaction.ts:754
 
 ***
 
@@ -479,11 +479,11 @@ Hashes a witness and updates the hasher.
 
 #### Parameters
 
-• **witness**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **witness**: `BytesLike`
 
 The witness to hash.
 
-• **hasher**: [`Hasher`](ccc.Class.Hasher.md)
+• **hasher**: `Hasher`
 
 The hasher instance to update.
 
@@ -499,4 +499,4 @@ Transaction.hashWitnessToHasher("0x...", hasher);
 
 #### Source
 
-[ckb/transaction.ts:837](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L837)
+ckb/transaction.ts:837

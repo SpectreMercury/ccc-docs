@@ -1,8 +1,8 @@
-[**@ckb-ccc/eip6963**](README.md) • **Docs**
+**@ckb-ccc/eip6963** • **Docs**
 
 ***
 
-[@ckb-ccc/eip6963](README.md) / [Eip6963](Namespace.Eip6963.md) / SignerFactory
+@ckb-ccc/eip6963 / Eip6963 / SignerFactory
 
 # Class: SignerFactory
 
@@ -12,7 +12,7 @@ Class representing a factory for creating and managing Signer instances.
 
 ### new SignerFactory()
 
-> **new SignerFactory**(`client`): [`SignerFactory`](Eip6963.Class.SignerFactory.md)
+> **new SignerFactory**(`client`): `SignerFactory`
 
 Creates an instance of SignerFactory.
 
@@ -24,11 +24,11 @@ The client instance.
 
 #### Returns
 
-[`SignerFactory`](Eip6963.Class.SignerFactory.md)
+`SignerFactory`
 
 #### Source
 
-[eip6963/src/signersFactory.ts:16](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/eip6963/src/signersFactory.ts#L16)
+eip6963/src/signersFactory.ts:16
 
 ## Properties
 
@@ -40,7 +40,7 @@ The client instance.
 
 #### Source
 
-[eip6963/src/signersFactory.ts:16](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/eip6963/src/signersFactory.ts#L16)
+eip6963/src/signersFactory.ts:16
 
 ***
 
@@ -50,7 +50,7 @@ The client instance.
 
 #### Source
 
-[eip6963/src/signersFactory.ts:10](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/eip6963/src/signersFactory.ts#L10)
+eip6963/src/signersFactory.ts:10
 
 ## Methods
 
@@ -78,4 +78,4 @@ A function to unsubscribe from the signer events.
 
 #### Source
 
-[eip6963/src/signersFactory.ts:23](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/eip6963/src/signersFactory.ts#L23)
+eip6963/src/signersFactory.ts:23

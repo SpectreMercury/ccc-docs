@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / SignerOpenLink
+@ckb-ccc/core / ccc / SignerOpenLink
 
 # Class: SignerOpenLink
 
@@ -11,47 +11,47 @@ This class provides methods to connect, get addresses, and sign transactions.
 
 ## Extends
 
-- [`SignerDummy`](ccc.Class.SignerDummy.md)
+- `SignerDummy`
 
 ## Constructors
 
 ### new SignerOpenLink()
 
-> **new SignerOpenLink**(`client`, `type`, `link`): [`SignerOpenLink`](ccc.Class.SignerOpenLink.md)
+> **new SignerOpenLink**(`client`, `type`, `link`): `SignerOpenLink`
 
 #### Parameters
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
-• **type**: [`SignerType`](ccc.Enumeration.SignerType.md)
+• **type**: `SignerType`
 
 • **link**: `string`
 
 #### Returns
 
-[`SignerOpenLink`](ccc.Class.SignerOpenLink.md)
+`SignerOpenLink`
 
 #### Overrides
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`constructor`](ccc.Class.SignerDummy.md#constructors)
+`SignerDummy`.`constructor`
 
 #### Source
 
-[signer/dummy/openLink.ts:6](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/dummy/openLink.ts#L6)
+signer/dummy/openLink.ts:6
 
 ## Properties
 
 ### client\_
 
-> `protected` **client\_**: [`Client`](ccc.Class.Client.md)
+> `protected` **client\_**: `Client`
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`client_`](ccc.Class.SignerDummy.md#client_)
+`SignerDummy`.`client_`
 
 #### Source
 
-[signer/signer/index.ts:40](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L40)
+signer/signer/index.ts:40
 
 ***
 
@@ -61,49 +61,49 @@ This class provides methods to connect, get addresses, and sign transactions.
 
 #### Source
 
-[signer/dummy/openLink.ts:9](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/dummy/openLink.ts#L9)
+signer/dummy/openLink.ts:9
 
 ***
 
 ### type
 
-> `readonly` **type**: [`SignerType`](ccc.Enumeration.SignerType.md)
+> `readonly` **type**: `SignerType`
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`type`](ccc.Class.SignerDummy.md#type)
+`SignerDummy`.`type`
 
 #### Source
 
-[signer/dummy/dummy.ts:12](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/dummy/dummy.ts#L12)
+signer/dummy/dummy.ts:12
 
 ## Accessors
 
 ### client
 
-> `get` **client**(): [`Client`](ccc.Class.Client.md)
+> `get` **client**(): `Client`
 
 #### Returns
 
-[`Client`](ccc.Class.Client.md)
+`Client`
 
 #### Source
 
-[signer/signer/index.ts:45](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L45)
+signer/signer/index.ts:45
 
 ***
 
 ### signType
 
-> `get` **signType**(): [`SignerSignType`](ccc.Enumeration.SignerSignType.md)
+> `get` **signType**(): `SignerSignType`
 
 #### Returns
 
-[`SignerSignType`](ccc.Enumeration.SignerSignType.md)
+`SignerSignType`
 
 #### Source
 
-[signer/dummy/dummy.ts:6](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/dummy/dummy.ts#L6)
+signer/dummy/dummy.ts:6
 
 ## Methods
 
@@ -121,11 +121,11 @@ A promise that resolves when the connection is complete.
 
 #### Overrides
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`connect`](ccc.Class.SignerDummy.md#connect)
+`SignerDummy`.`connect`
 
 #### Source
 
-[signer/dummy/openLink.ts:14](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/dummy/openLink.ts#L14)
+signer/dummy/openLink.ts:14
 
 ***
 
@@ -143,33 +143,33 @@ A promise that resolves when disconnected.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`disconnect`](ccc.Class.SignerDummy.md#disconnect)
+`SignerDummy`.`disconnect`
 
 #### Source
 
-[signer/signer/index.ts:96](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L96)
+signer/signer/index.ts:96
 
 ***
 
 ### getAddressObjs()
 
-> **getAddressObjs**(): `Promise`\<[`Address`](ccc.Class.Address.md)[]\>
+> **getAddressObjs**(): `Promise`\<`Address`[]\>
 
 Gets an array of Address objects associated with the signer.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)[]\>
+`Promise`\<`Address`[]\>
 
 A promise that resolves to an array of Address objects.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`getAddressObjs`](ccc.Class.SignerDummy.md#getaddressobjs)
+`SignerDummy`.`getAddressObjs`
 
 #### Source
 
-[signer/dummy/dummy.ts:25](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/dummy/dummy.ts#L25)
+signer/dummy/dummy.ts:25
 
 ***
 
@@ -187,11 +187,11 @@ A promise that resolves to an array of addresses as strings.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`getAddresses`](ccc.Class.SignerDummy.md#getaddresses)
+`SignerDummy`.`getAddresses`
 
 #### Source
 
-[signer/signer/index.ts:153](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L153)
+signer/signer/index.ts:153
 
 ***
 
@@ -209,11 +209,11 @@ A promise that resolves to the balance
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`getBalance`](ccc.Class.SignerDummy.md#getbalance)
+`SignerDummy`.`getBalance`
 
 #### Source
 
-[signer/signer/index.ts:164](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L164)
+signer/signer/index.ts:164
 
 ***
 
@@ -231,11 +231,11 @@ A promise that resolves to a string representing the identity
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`getIdentity`](ccc.Class.SignerDummy.md#getidentity)
+`SignerDummy`.`getIdentity`
 
 #### Source
 
-[signer/signer/index.ts:117](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L117)
+signer/signer/index.ts:117
 
 ***
 
@@ -253,11 +253,11 @@ A promise that resolves to a string representing the internal address.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`getInternalAddress`](ccc.Class.SignerDummy.md#getinternaladdress)
+`SignerDummy`.`getInternalAddress`
 
 #### Source
 
-[signer/dummy/dummy.ts:21](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/dummy/dummy.ts#L21)
+signer/dummy/dummy.ts:21
 
 ***
 
@@ -281,17 +281,17 @@ A promise that resolves to the recommended address as a string.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`getRecommendedAddress`](ccc.Class.SignerDummy.md#getrecommendedaddress)
+`SignerDummy`.`getRecommendedAddress`
 
 #### Source
 
-[signer/signer/index.ts:144](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L144)
+signer/signer/index.ts:144
 
 ***
 
 ### getRecommendedAddressObj()
 
-> **getRecommendedAddressObj**(`_preference`?): `Promise`\<[`Address`](ccc.Class.Address.md)\>
+> **getRecommendedAddressObj**(`_preference`?): `Promise`\<`Address`\>
 
 Gets the recommended Address object for the signer.
 
@@ -303,17 +303,17 @@ Optional preference parameter.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)\>
+`Promise`\<`Address`\>
 
 A promise that resolves to the recommended Address object.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`getRecommendedAddressObj`](ccc.Class.SignerDummy.md#getrecommendedaddressobj)
+`SignerDummy`.`getRecommendedAddressObj`
 
 #### Source
 
-[signer/signer/index.ts:134](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L134)
+signer/signer/index.ts:134
 
 ***
 
@@ -331,35 +331,35 @@ A promise that resolves the connection status.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`isConnected`](ccc.Class.SignerDummy.md#isconnected)
+`SignerDummy`.`isConnected`
 
 #### Source
 
-[signer/dummy/dummy.ts:17](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/dummy/dummy.ts#L17)
+signer/dummy/dummy.ts:17
 
 ***
 
 ### prepareTransaction()
 
-> **prepareTransaction**(`_`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **prepareTransaction**(`_`): `Promise`\<`Transaction`\>
 
 prepare a transaction before signing. This method is not implemented and should be overridden by subclasses.
 
 #### Parameters
 
-• **\_**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **\_**: `TransactionLike`
 
 The transaction to prepare, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to the prepared Transaction object.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`prepareTransaction`](ccc.Class.SignerDummy.md#preparetransaction)
+`SignerDummy`.`prepareTransaction`
 
 #### Throws
 
@@ -367,7 +367,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:262](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L262)
+signer/signer/index.ts:262
 
 ***
 
@@ -379,7 +379,7 @@ Replace the current client.
 
 #### Parameters
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 #### Returns
 
@@ -387,11 +387,11 @@ Replace the current client.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`replaceClient`](ccc.Class.SignerDummy.md#replaceclient)
+`SignerDummy`.`replaceClient`
 
 #### Source
 
-[signer/signer/index.ts:80](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L80)
+signer/signer/index.ts:80
 
 ***
 
@@ -403,7 +403,7 @@ Sends a transaction after signing it.
 
 #### Parameters
 
-• **tx**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **tx**: `TransactionLike`
 
 The transaction to send, represented as a TransactionLike object.
 
@@ -415,33 +415,33 @@ A promise that resolves to the transaction hash as a Hex string.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`sendTransaction`](ccc.Class.SignerDummy.md#sendtransaction)
+`SignerDummy`.`sendTransaction`
 
 #### Source
 
-[signer/signer/index.ts:240](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L240)
+signer/signer/index.ts:240
 
 ***
 
 ### signMessage()
 
-> **signMessage**(`message`): `Promise`\<[`Signature`](ccc.Class.Signature.md)\>
+> **signMessage**(`message`): `Promise`\<`Signature`\>
 
 Signs a message.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
 #### Returns
 
-`Promise`\<[`Signature`](ccc.Class.Signature.md)\>
+`Promise`\<`Signature`\>
 
 A promise that resolves to the signature info.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`signMessage`](ccc.Class.SignerDummy.md#signmessage)
+`SignerDummy`.`signMessage`
 
 #### Throws
 
@@ -449,7 +449,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:177](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L177)
+signer/signer/index.ts:177
 
 ***
 
@@ -461,7 +461,7 @@ Signs a message and returns signature only. This method is not implemented and s
 
 #### Parameters
 
-• **\_**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **\_**: `BytesLike`
 
 The message to sign, as a string or BytesLike object.
 
@@ -473,7 +473,7 @@ A promise that resolves to the signature as a string.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`signMessageRaw`](ccc.Class.SignerDummy.md#signmessageraw)
+`SignerDummy`.`signMessageRaw`
 
 #### Throws
 
@@ -481,31 +481,31 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:192](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L192)
+signer/signer/index.ts:192
 
 ***
 
 ### signOnlyTransaction()
 
-> **signOnlyTransaction**(`_`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **signOnlyTransaction**(`_`): `Promise`\<`Transaction`\>
 
 Signs a transaction without preparing information for it. This method is not implemented and should be overridden by subclasses.
 
 #### Parameters
 
-• **\_**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **\_**: `TransactionLike`
 
 The transaction to sign, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to the signed Transaction object.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`signOnlyTransaction`](ccc.Class.SignerDummy.md#signonlytransaction)
+`SignerDummy`.`signOnlyTransaction`
 
 #### Throws
 
@@ -513,35 +513,35 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:273](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L273)
+signer/signer/index.ts:273
 
 ***
 
 ### signTransaction()
 
-> **signTransaction**(`tx`): `Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+> **signTransaction**(`tx`): `Promise`\<`Transaction`\>
 
 Signs a transaction.
 
 #### Parameters
 
-• **tx**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **tx**: `TransactionLike`
 
 The transaction to sign, represented as a TransactionLike object.
 
 #### Returns
 
-`Promise`\<[`Transaction`](ccc.Class.Transaction.md)\>
+`Promise`\<`Transaction`\>
 
 A promise that resolves to the signed Transaction object.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`signTransaction`](ccc.Class.SignerDummy.md#signtransaction)
+`SignerDummy`.`signTransaction`
 
 #### Source
 
-[signer/signer/index.ts:250](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L250)
+signer/signer/index.ts:250
 
 ***
 
@@ -553,9 +553,9 @@ Verify a signature.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
-• **signature**: `string` \| [`Signature`](ccc.Class.Signature.md)
+• **signature**: `string` \| `Signature`
 
 #### Returns
 
@@ -565,7 +565,7 @@ A promise that resolves to the verification result.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`verifyMessage`](ccc.Class.SignerDummy.md#verifymessage)
+`SignerDummy`.`verifyMessage`
 
 #### Throws
 
@@ -573,7 +573,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:204](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L204)
+signer/signer/index.ts:204
 
 ***
 
@@ -585,7 +585,7 @@ Verify a string signature. This method is not implemented and should be overridd
 
 #### Parameters
 
-• **\_0**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **\_0**: `BytesLike`
 
 The original message.
 
@@ -601,7 +601,7 @@ A promise that resolves to the verification result.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`verifyMessageRaw`](ccc.Class.SignerDummy.md#verifymessageraw)
+`SignerDummy`.`verifyMessageRaw`
 
 #### Throws
 
@@ -609,7 +609,7 @@ Will throw an error if not implemented.
 
 #### Source
 
-[signer/signer/index.ts:230](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L230)
+signer/signer/index.ts:230
 
 ***
 
@@ -619,9 +619,9 @@ Will throw an error if not implemented.
 
 #### Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
-• **signature**: [`Signature`](ccc.Class.Signature.md)
+• **signature**: `Signature`
 
 #### Returns
 
@@ -629,8 +629,8 @@ Will throw an error if not implemented.
 
 #### Inherited from
 
-[`SignerDummy`](ccc.Class.SignerDummy.md).[`verifyMessage`](ccc.Class.SignerDummy.md#verifymessage-1)
+`SignerDummy`.`verifyMessage`
 
 #### Source
 
-[signer/signer/index.ts:49](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L49)
+signer/signer/index.ts:49

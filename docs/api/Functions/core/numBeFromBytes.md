@@ -1,24 +1,24 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / numBeFromBytes
+@ckb-ccc/core / ccc / numBeFromBytes
 
 # Function: numBeFromBytes()
 
-> **numBeFromBytes**(`val`): [`Num`](ccc.Type.Num.md)
+> **numBeFromBytes**(`val`): `Num`
 
 Converts a byte array to a Num (bigint) assuming big-endian order.
 
 ## Parameters
 
-• **val**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **val**: `BytesLike`
 
 The byte array to convert.
 
 ## Returns
 
-[`Num`](ccc.Type.Num.md)
+`Num`
 
 A Num (bigint) representing the numeric value.
 
@@ -30,4 +30,4 @@ const num = numBeFromBytes(new Uint8Array([0, 0, 48, 57])); // Outputs 12345n
 
 ## Source
 
-[num/index.ts:152](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/num/index.ts#L152)
+num/index.ts:152

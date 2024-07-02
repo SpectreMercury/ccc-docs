@@ -1,8 +1,8 @@
-[**@ckb-ccc/joy-id**](README.md) • **Docs**
+**@ckb-ccc/joy-id** • **Docs**
 
 ***
 
-[@ckb-ccc/joy-id](README.md) / [JoyId](Namespace.JoyId.md) / getJoyIdSigners
+@ckb-ccc/joy-id / JoyId / getJoyIdSigners
 
 # Function: getJoyIdSigners()
 
@@ -34,4 +34,4 @@ An array of signer information objects.
 
 ## Source
 
-[joy-id/src/signerFactory/index.ts:16](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/signerFactory/index.ts#L16)
+joy-id/src/signerFactory/index.ts:16

@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / SignerInfo
+@ckb-ccc/core / ccc / SignerInfo
 
 # Class: SignerInfo
 
@@ -12,21 +12,21 @@ A class representing information about a signer, including its type and the sign
 
 ### new SignerInfo()
 
-> **new SignerInfo**(`name`, `signer`): [`SignerInfo`](ccc.Class.SignerInfo.md)
+> **new SignerInfo**(`name`, `signer`): `SignerInfo`
 
 #### Parameters
 
 • **name**: `string`
 
-• **signer**: [`Signer`](ccc.Class.Signer.md)
+• **signer**: `Signer`
 
 #### Returns
 
-[`SignerInfo`](ccc.Class.SignerInfo.md)
+`SignerInfo`
 
 #### Source
 
-[signer/signer/index.ts:282](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L282)
+signer/signer/index.ts:282
 
 ## Properties
 
@@ -36,14 +36,14 @@ A class representing information about a signer, including its type and the sign
 
 #### Source
 
-[signer/signer/index.ts:283](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L283)
+signer/signer/index.ts:283
 
 ***
 
 ### signer
 
-> **signer**: [`Signer`](ccc.Class.Signer.md)
+> **signer**: `Signer`
 
 #### Source
 
-[signer/signer/index.ts:284](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L284)
+signer/signer/index.ts:284

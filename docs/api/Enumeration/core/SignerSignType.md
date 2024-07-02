@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / SignerSignType
+@ckb-ccc/core / ccc / SignerSignType
 
 # Enumeration: SignerSignType
 
@@ -14,7 +14,7 @@
 
 #### Source
 
-[signer/signer/index.ts:13](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L13)
+signer/signer/index.ts:13
 
 ***
 
@@ -24,7 +24,7 @@
 
 #### Source
 
-[signer/signer/index.ts:14](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L14)
+signer/signer/index.ts:14
 
 ***
 
@@ -34,7 +34,7 @@
 
 #### Source
 
-[signer/signer/index.ts:15](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L15)
+signer/signer/index.ts:15
 
 ***
 
@@ -44,4 +44,4 @@
 
 #### Source
 
-[signer/signer/index.ts:12](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/signer/index.ts#L12)
+signer/signer/index.ts:12

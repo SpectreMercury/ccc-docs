@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / CellInput
+@ckb-ccc/core / ccc / CellInput
 
 # Class: CellInput
 
@@ -10,13 +10,13 @@
 
 ### new CellInput()
 
-> **new CellInput**(`previousOutput`, `since`, `cellOutput`?, `outputData`?, `blockNumber`?): [`CellInput`](ccc.Class.CellInput.md)
+> **new CellInput**(`previousOutput`, `since`, `cellOutput`?, `outputData`?, `blockNumber`?): `CellInput`
 
 Creates an instance of CellInput.
 
 #### Parameters
 
-• **previousOutput**: [`OutPoint`](ccc.Class.OutPoint.md)
+• **previousOutput**: `OutPoint`
 
 The previous outpoint of the cell.
 
@@ -24,7 +24,7 @@ The previous outpoint of the cell.
 
 The since value of the cell input.
 
-• **cellOutput?**: [`CellOutput`](ccc.Class.CellOutput.md)
+• **cellOutput?**: `CellOutput`
 
 The optional cell output associated with the cell input.
 
@@ -38,11 +38,11 @@ The optional block number associated with the cell input.
 
 #### Returns
 
-[`CellInput`](ccc.Class.CellInput.md)
+`CellInput`
 
 #### Source
 
-[ckb/transaction.ts:343](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L343)
+ckb/transaction.ts:343
 
 ## Properties
 
@@ -54,19 +54,19 @@ The optional block number associated with the cell input.
 
 #### Source
 
-[ckb/transaction.ts:348](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L348)
+ckb/transaction.ts:348
 
 ***
 
 ### cellOutput?
 
-> `optional` **cellOutput**: [`CellOutput`](ccc.Class.CellOutput.md)
+> `optional` **cellOutput**: `CellOutput`
 
 The optional cell output associated with the cell input.
 
 #### Source
 
-[ckb/transaction.ts:346](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L346)
+ckb/transaction.ts:346
 
 ***
 
@@ -78,19 +78,19 @@ The optional output data associated with the cell input.
 
 #### Source
 
-[ckb/transaction.ts:347](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L347)
+ckb/transaction.ts:347
 
 ***
 
 ### previousOutput
 
-> **previousOutput**: [`OutPoint`](ccc.Class.OutPoint.md)
+> **previousOutput**: `OutPoint`
 
 The previous outpoint of the cell.
 
 #### Source
 
-[ckb/transaction.ts:344](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L344)
+ckb/transaction.ts:344
 
 ***
 
@@ -102,7 +102,7 @@ The since value of the cell input.
 
 #### Source
 
-[ckb/transaction.ts:345](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L345)
+ckb/transaction.ts:345
 
 ## Methods
 
@@ -136,24 +136,24 @@ An object representing the cell input in molecule data format.
 
 #### Source
 
-[ckb/transaction.ts:413](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L413)
+ckb/transaction.ts:413
 
 ***
 
 ### completeExtraInfos()
 
-> **completeExtraInfos**(`client`): `Promise`\<[`CellInput`](ccc.Class.CellInput.md)\>
+> **completeExtraInfos**(`client`): `Promise`\<`CellInput`\>
 
 Complete extra infos in the input. Like the output of the out point.
 The instance will be modified.
 
 #### Parameters
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 #### Returns
 
-`Promise`\<[`CellInput`](ccc.Class.CellInput.md)\>
+`Promise`\<`CellInput`\>
 
 The completed instance.
 
@@ -167,7 +167,7 @@ if (!cellInput.cellOutput) {
 
 #### Source
 
-[ckb/transaction.ts:393](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L393)
+ckb/transaction.ts:393
 
 ***
 
@@ -191,25 +191,25 @@ const cellInputBytes = cellInput.toBytes();
 
 #### Source
 
-[ckb/transaction.ts:431](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L431)
+ckb/transaction.ts:431
 
 ***
 
 ### from()
 
-> `static` **from**(`cellInput`): [`CellInput`](ccc.Class.CellInput.md)
+> `static` **from**(`cellInput`): `CellInput`
 
 Creates a CellInput instance from a CellInputLike object.
 
 #### Parameters
 
-• **cellInput**: [`CellInputLike`](ccc.Type.CellInputLike.md)
+• **cellInput**: `CellInputLike`
 
 A CellInputLike object or an instance of CellInput.
 
 #### Returns
 
-[`CellInput`](ccc.Class.CellInput.md)
+`CellInput`
 
 A CellInput instance.
 
@@ -224,25 +224,25 @@ const cellInput = CellInput.from({
 
 #### Source
 
-[ckb/transaction.ts:366](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L366)
+ckb/transaction.ts:366
 
 ***
 
 ### fromBytes()
 
-> `static` **fromBytes**(`bytes`): [`CellInput`](ccc.Class.CellInput.md)
+> `static` **fromBytes**(`bytes`): `CellInput`
 
 Creates a CellInput instance from a byte-like value or molecule CellInput.
 
 #### Parameters
 
-• **bytes**: [`BytesLike`](ccc.Type.BytesLike.md) \| `CellInput`
+• **bytes**: `BytesLike` \| `CellInput`
 
 The byte-like value or molecule CellInput to convert.
 
 #### Returns
 
-[`CellInput`](ccc.Class.CellInput.md)
+`CellInput`
 
 A CellInput instance.
 
@@ -254,4 +254,4 @@ const cellInput = CellInput.fromBytes(new Uint8Array([/* cell input bytes */]));
 
 #### Source
 
-[ckb/transaction.ts:447](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L447)
+ckb/transaction.ts:447

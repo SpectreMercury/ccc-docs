@@ -1,8 +1,8 @@
-[**@ckb-ccc/joy-id**](README.md) • **Docs**
+**@ckb-ccc/joy-id** • **Docs**
 
 ***
 
-[@ckb-ccc/joy-id](README.md) / [JoyId](Namespace.JoyId.md) / CkbSigner
+@ckb-ccc/joy-id / JoyId / CkbSigner
 
 # Class: CkbSigner
 
@@ -16,7 +16,7 @@ Class representing a CKB signer that extends Signer from @ckb-ccc/core.
 
 ### new CkbSigner()
 
-> **new CkbSigner**(`client`, `name`, `icon`, `_appUri`?, `_aggregatorUri`?, `connectionsRepo`?): [`CkbSigner`](JoyId.Class.CkbSigner.md)
+> **new CkbSigner**(`client`, `name`, `icon`, `_appUri`?, `_aggregatorUri`?, `connectionsRepo`?): `CkbSigner`
 
 Creates an instance of CkbSigner.
 
@@ -48,7 +48,7 @@ The connections repository.
 
 #### Returns
 
-[`CkbSigner`](JoyId.Class.CkbSigner.md)
+`CkbSigner`
 
 #### Overrides
 
@@ -56,7 +56,7 @@ The connections repository.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:58](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L58)
+joy-id/src/ckb/index.ts:58
 
 ## Properties
 
@@ -68,7 +68,7 @@ The aggregator URI.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:63](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L63)
+joy-id/src/ckb/index.ts:63
 
 ***
 
@@ -80,7 +80,7 @@ The application URI.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:62](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L62)
+joy-id/src/ckb/index.ts:62
 
 ***
 
@@ -104,7 +104,7 @@ core/dist/signer/signer/index.d.ts:32
 
 #### Source
 
-[joy-id/src/ckb/index.ts:33](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L33)
+joy-id/src/ckb/index.ts:33
 
 ***
 
@@ -116,7 +116,7 @@ The connections repository.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:64](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L64)
+joy-id/src/ckb/index.ts:64
 
 ***
 
@@ -128,7 +128,7 @@ The icon URL of the signer.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:61](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L61)
+joy-id/src/ckb/index.ts:61
 
 ***
 
@@ -140,7 +140,7 @@ The name of the signer.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:60](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L60)
+joy-id/src/ckb/index.ts:60
 
 ## Accessors
 
@@ -172,7 +172,7 @@ The sign type.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:29](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L29)
+joy-id/src/ckb/index.ts:29
 
 ***
 
@@ -190,7 +190,7 @@ The type of the signer.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:21](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L21)
+joy-id/src/ckb/index.ts:21
 
 ## Methods
 
@@ -212,7 +212,7 @@ Will throw an error if not connected.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:41](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L41)
+joy-id/src/ckb/index.ts:41
 
 ***
 
@@ -234,7 +234,7 @@ A promise that resolves when the connection is established.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:105](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L105)
+joy-id/src/ckb/index.ts:105
 
 ***
 
@@ -256,7 +256,7 @@ A promise that resolves when the disconnection is complete.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:125](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L125)
+joy-id/src/ckb/index.ts:125
 
 ***
 
@@ -274,7 +274,7 @@ A promise that resolves to the address object.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:166](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L166)
+joy-id/src/ckb/index.ts:166
 
 ***
 
@@ -296,7 +296,7 @@ A promise that resolves to an array of address objects.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:177](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L177)
+joy-id/src/ckb/index.ts:177
 
 ***
 
@@ -336,7 +336,7 @@ The aggregator URI.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:91](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L91)
+joy-id/src/ckb/index.ts:91
 
 ***
 
@@ -392,7 +392,7 @@ The configuration object.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:74](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L74)
+joy-id/src/ckb/index.ts:74
 
 ***
 
@@ -414,7 +414,7 @@ A promise that resolves to the identity.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:154](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L154)
+joy-id/src/ckb/index.ts:154
 
 ***
 
@@ -436,7 +436,7 @@ A promise that resolves to the internal address.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:146](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L146)
+joy-id/src/ckb/index.ts:146
 
 ***
 
@@ -514,7 +514,7 @@ A promise that resolves to true if connected, false otherwise.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:134](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L134)
+joy-id/src/ckb/index.ts:134
 
 ***
 
@@ -542,7 +542,7 @@ A promise that resolves to the prepared transaction.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:186](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L186)
+joy-id/src/ckb/index.ts:186
 
 ***
 
@@ -572,7 +572,7 @@ Will throw an error if no COTA cells are found for the sub key wallet.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:214](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L214)
+joy-id/src/ckb/index.ts:214
 
 ***
 
@@ -612,7 +612,7 @@ Restores the previous connection.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:337](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L337)
+joy-id/src/ckb/index.ts:337
 
 ***
 
@@ -628,7 +628,7 @@ Saves the current connection.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:322](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L322)
+joy-id/src/ckb/index.ts:322
 
 ***
 
@@ -714,7 +714,7 @@ A promise that resolves to the signed message.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:290](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L290)
+joy-id/src/ckb/index.ts:290
 
 ***
 
@@ -742,7 +742,7 @@ A promise that resolves to the signed transaction.
 
 #### Source
 
-[joy-id/src/ckb/index.ts:258](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/ckb/index.ts#L258)
+joy-id/src/ckb/index.ts:258
 
 ***
 

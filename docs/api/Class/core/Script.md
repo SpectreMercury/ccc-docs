@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / Script
+@ckb-ccc/core / ccc / Script
 
 # Class: Script
 
@@ -10,7 +10,7 @@
 
 ### new Script()
 
-> **new Script**(`codeHash`, `hashType`, `args`): [`Script`](ccc.Class.Script.md)
+> **new Script**(`codeHash`, `hashType`, `args`): `Script`
 
 Creates an instance of Script.
 
@@ -20,7 +20,7 @@ Creates an instance of Script.
 
 The code hash of the script.
 
-• **hashType**: [`HashType`](ccc.Type.HashType.md)
+• **hashType**: `HashType`
 
 The hash type of the script.
 
@@ -30,11 +30,11 @@ The arguments for the script.
 
 #### Returns
 
-[`Script`](ccc.Class.Script.md)
+`Script`
 
 #### Source
 
-[ckb/script.ts:97](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L97)
+ckb/script.ts:97
 
 ## Properties
 
@@ -46,7 +46,7 @@ The arguments for the script.
 
 #### Source
 
-[ckb/script.ts:100](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L100)
+ckb/script.ts:100
 
 ***
 
@@ -58,19 +58,19 @@ The code hash of the script.
 
 #### Source
 
-[ckb/script.ts:98](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L98)
+ckb/script.ts:98
 
 ***
 
 ### hashType
 
-> **hashType**: [`HashType`](ccc.Type.HashType.md)
+> **hashType**: `HashType`
 
 The hash type of the script.
 
 #### Source
 
-[ckb/script.ts:99](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L99)
+ckb/script.ts:99
 
 ## Methods
 
@@ -100,7 +100,7 @@ An object representing the script in molecule data format.
 
 #### Source
 
-[ckb/script.ts:137](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L137)
+ckb/script.ts:137
 
 ***
 
@@ -112,7 +112,7 @@ Compares the current Script instance with another ScriptLike object for equality
 
 #### Parameters
 
-• **val**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **val**: `ScriptLike`
 
 The ScriptLike object to compare with.
 
@@ -130,7 +130,7 @@ const isEqual = script.eq(anotherScript);
 
 #### Source
 
-[ckb/script.ts:195](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L195)
+ckb/script.ts:195
 
 ***
 
@@ -154,25 +154,25 @@ const scriptBytes = script.toBytes();
 
 #### Source
 
-[ckb/script.ts:156](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L156)
+ckb/script.ts:156
 
 ***
 
 ### from()
 
-> `static` **from**(`script`): [`Script`](ccc.Class.Script.md)
+> `static` **from**(`script`): `Script`
 
 Creates a Script instance from a ScriptLike object.
 
 #### Parameters
 
-• **script**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **script**: `ScriptLike`
 
 A ScriptLike object or an instance of Script.
 
 #### Returns
 
-[`Script`](ccc.Class.Script.md)
+`Script`
 
 A Script instance.
 
@@ -188,25 +188,25 @@ const script = Script.from({
 
 #### Source
 
-[ckb/script.ts:119](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L119)
+ckb/script.ts:119
 
 ***
 
 ### fromBytes()
 
-> `static` **fromBytes**(`bytes`): [`Script`](ccc.Class.Script.md)
+> `static` **fromBytes**(`bytes`): `Script`
 
 Creates a Script instance from a byte-like value or molecule Script.
 
 #### Parameters
 
-• **bytes**: [`BytesLike`](ccc.Type.BytesLike.md) \| `Script`
+• **bytes**: `BytesLike` \| `Script`
 
 The byte-like value or molecule Script to convert.
 
 #### Returns
 
-[`Script`](ccc.Class.Script.md)
+`Script`
 
 A Script instance.
 
@@ -218,4 +218,4 @@ const script = Script.fromBytes(new Uint8Array([/* script bytes */]));
 
 #### Source
 
-[ckb/script.ts:172](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L172)
+ckb/script.ts:172

@@ -1,8 +1,8 @@
-[**@ckb-ccc/eip6963**](README.md) • **Docs**
+**@ckb-ccc/eip6963** • **Docs**
 
 ***
 
-[@ckb-ccc/eip6963](README.md) / [Eip6963](Namespace.Eip6963.md) / Signer
+@ckb-ccc/eip6963 / Eip6963 / Signer
 
 # Class: Signer
 
@@ -16,7 +16,7 @@ Class representing an EVM signer that extends SignerEvm from @ckb-ccc/core.
 
 ### new Signer()
 
-> **new Signer**(`client`, `detail`): [`Signer`](Eip6963.Class.Signer.md)
+> **new Signer**(`client`, `detail`): `Signer`
 
 Creates an instance of Signer.
 
@@ -32,7 +32,7 @@ The provider detail.
 
 #### Returns
 
-[`Signer`](Eip6963.Class.Signer.md)
+`Signer`
 
 #### Overrides
 
@@ -40,7 +40,7 @@ The provider detail.
 
 #### Source
 
-[eip6963/src/signer.ts:15](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/eip6963/src/signer.ts#L15)
+eip6963/src/signer.ts:15
 
 ## Properties
 
@@ -66,7 +66,7 @@ The provider detail.
 
 #### Source
 
-[eip6963/src/signer.ts:17](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/eip6963/src/signer.ts#L17)
+eip6963/src/signer.ts:17
 
 ## Accessors
 
@@ -200,7 +200,7 @@ A promise that resolves when the connection is established.
 
 #### Source
 
-[eip6963/src/signer.ts:34](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/eip6963/src/signer.ts#L34)
+eip6963/src/signer.ts:34
 
 ***
 
@@ -310,7 +310,7 @@ A promise that resolves to the EVM account address.
 
 #### Source
 
-[eip6963/src/signer.ts:26](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/eip6963/src/signer.ts#L26)
+eip6963/src/signer.ts:26
 
 ***
 
@@ -432,7 +432,7 @@ A promise that resolves to true if connected, false otherwise.
 
 #### Source
 
-[eip6963/src/signer.ts:42](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/eip6963/src/signer.ts#L42)
+eip6963/src/signer.ts:42
 
 ***
 
@@ -570,7 +570,7 @@ A promise that resolves to the signed message.
 
 #### Source
 
-[eip6963/src/signer.ts:54](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/eip6963/src/signer.ts#L54)
+eip6963/src/signer.ts:54
 
 ***
 

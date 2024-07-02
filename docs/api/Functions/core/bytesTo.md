@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / bytesTo
+@ckb-ccc/core / ccc / bytesTo
 
 # Function: bytesTo()
 
@@ -12,7 +12,7 @@ Converts a byte-like value to a string using the specified encoding.
 
 ## Parameters
 
-• **val**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **val**: `BytesLike`
 
 The byte-like value to convert.
 
@@ -38,4 +38,4 @@ console.log(base64String); // Outputs "aGVsbG8="
 
 ## Source
 
-[bytes/index.ts:51](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/bytes/index.ts#L51)
+bytes/index.ts:51

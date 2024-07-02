@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / ClientJsonRpc
+@ckb-ccc/core / ccc / ClientJsonRpc
 
 # Class: `abstract` ClientJsonRpc
 
@@ -11,18 +11,18 @@ Provides methods for sending transactions and building JSON-RPC payloads.
 
 ## Extends
 
-- [`Client`](ccc.Class.Client.md)
+- `Client`
 
 ## Extended by
 
-- [`ClientPublicMainnet`](ccc.Class.ClientPublicMainnet.md)
-- [`ClientPublicTestnet`](ccc.Class.ClientPublicTestnet.md)
+- `ClientPublicMainnet`
+- `ClientPublicTestnet`
 
 ## Constructors
 
 ### new ClientJsonRpc()
 
-> **new ClientJsonRpc**(`url_`, `timeout`): [`ClientJsonRpc`](ccc.Class.ClientJsonRpc.md)
+> **new ClientJsonRpc**(`url_`, `timeout`): `ClientJsonRpc`
 
 Creates an instance of ClientJsonRpc.
 
@@ -36,27 +36,27 @@ The timeout for requests in milliseconds, default is 30000.
 
 #### Returns
 
-[`ClientJsonRpc`](ccc.Class.ClientJsonRpc.md)
+`ClientJsonRpc`
 
 #### Overrides
 
-[`Client`](ccc.Class.Client.md).[`constructor`](ccc.Class.Client.md#constructors)
+`Client`.`constructor`
 
 #### Source
 
-[client/jsonRpc/index.ts:51](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L51)
+client/jsonRpc/index.ts:51
 
 ## Properties
 
 ### findCellsPaged()
 
-> **findCellsPaged**: (`key`, `order`?, `limit`?, `after`?) => `Promise`\<[`ClientFindCellsResponse`](ccc.Type.ClientFindCellsResponse.md)\>
+> **findCellsPaged**: (`key`, `order`?, `limit`?, `after`?) => `Promise`\<`ClientFindCellsResponse`\>
 
 find cells from node.
 
 #### Parameters
 
-• **key**: [`ClientIndexerSearchKeyLike`](ccc.Type.ClientIndexerSearchKeyLike.md)
+• **key**: `ClientIndexerSearchKeyLike`
 
 The search key of cells.
 
@@ -64,7 +64,7 @@ The search key of cells.
 
 The order of cells.
 
-• **limit?**: [`NumLike`](ccc.Type.NumLike.md)
+• **limit?**: `NumLike`
 
 The max return size of cells.
 
@@ -74,15 +74,15 @@ Pagination parameter.
 
 #### Returns
 
-`Promise`\<[`ClientFindCellsResponse`](ccc.Type.ClientFindCellsResponse.md)\>
+`Promise`\<`ClientFindCellsResponse`\>
 
 #### Overrides
 
-[`Client`](ccc.Class.Client.md).[`findCellsPaged`](ccc.Class.Client.md#findcellspaged)
+`Client`.`findCellsPaged`
 
 #### Source
 
-[client/jsonRpc/index.ts:108](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L108)
+client/jsonRpc/index.ts:108
 
 ***
 
@@ -94,7 +94,7 @@ get cells capacity from node.
 
 #### Parameters
 
-• **key**: [`ClientIndexerSearchKeyLike`](ccc.Type.ClientIndexerSearchKeyLike.md)
+• **key**: `ClientIndexerSearchKeyLike`
 
 The search key of cells.
 
@@ -104,37 +104,37 @@ The search key of cells.
 
 #### Overrides
 
-[`Client`](ccc.Class.Client.md).[`getCellsCapacity`](ccc.Class.Client.md#getcellscapacity)
+`Client`.`getCellsCapacity`
 
 #### Source
 
-[client/jsonRpc/index.ts:130](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L130)
+client/jsonRpc/index.ts:130
 
 ***
 
 ### getTransaction()
 
-> **getTransaction**: (`txHash`) => `Promise`\<[`ClientTransactionResponse`](ccc.Type.ClientTransactionResponse.md)\>
+> **getTransaction**: (`txHash`) => `Promise`\<`ClientTransactionResponse`\>
 
 Get a transaction from node.
 
 #### Parameters
 
-• **txHash**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **txHash**: `BytesLike`
 
 The hash of the transaction.
 
 #### Returns
 
-`Promise`\<[`ClientTransactionResponse`](ccc.Type.ClientTransactionResponse.md)\>
+`Promise`\<`ClientTransactionResponse`\>
 
 #### Overrides
 
-[`Client`](ccc.Class.Client.md).[`getTransaction`](ccc.Class.Client.md#gettransaction)
+`Client`.`getTransaction`
 
 #### Source
 
-[client/jsonRpc/index.ts:92](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L92)
+client/jsonRpc/index.ts:92
 
 ***
 
@@ -146,11 +146,11 @@ Send a transaction to node.
 
 #### Parameters
 
-• **transaction**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **transaction**: `TransactionLike`
 
 The transaction to send.
 
-• **validator?**: [`OutputsValidator`](ccc.Type.OutputsValidator.md)
+• **validator?**: `OutputsValidator`
 
 "passthrough": Disable validation. "well_known_scripts_only": Only accept well known scripts in the transaction.
 
@@ -160,11 +160,11 @@ The transaction to send.
 
 #### Overrides
 
-[`Client`](ccc.Class.Client.md).[`sendTransaction`](ccc.Class.Client.md#sendtransaction)
+`Client`.`sendTransaction`
 
 #### Source
 
-[client/jsonRpc/index.ts:76](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L76)
+client/jsonRpc/index.ts:76
 
 ***
 
@@ -176,7 +176,7 @@ The timeout for requests in milliseconds, default is 30000.
 
 #### Source
 
-[client/jsonRpc/index.ts:53](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L53)
+client/jsonRpc/index.ts:53
 
 ***
 
@@ -186,7 +186,7 @@ The timeout for requests in milliseconds, default is 30000.
 
 #### Source
 
-[client/jsonRpc/index.ts:52](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L52)
+client/jsonRpc/index.ts:52
 
 ## Accessors
 
@@ -200,7 +200,7 @@ The timeout for requests in milliseconds, default is 30000.
 
 #### Source
 
-[client/client.ts:30](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L30)
+client/client.ts:30
 
 ***
 
@@ -218,7 +218,7 @@ The URL of the JSON-RPC server.
 
 #### Source
 
-[client/jsonRpc/index.ts:64](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L64)
+client/jsonRpc/index.ts:64
 
 ## Methods
 
@@ -258,17 +258,17 @@ A function that sends a JSON-RPC request with the given method and transformed p
 
 #### Source
 
-[client/jsonRpc/index.ts:145](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L145)
+client/jsonRpc/index.ts:145
 
 ***
 
 ### findCells()
 
-> **findCells**(`key`, `order`?, `limit`?): `AsyncGenerator`\<[`Cell`](ccc.Class.Cell.md), `any`, `unknown`\>
+> **findCells**(`key`, `order`?, `limit`?): `AsyncGenerator`\<`Cell`, `any`, `unknown`\>
 
 #### Parameters
 
-• **key**: [`ClientIndexerSearchKeyLike`](ccc.Type.ClientIndexerSearchKeyLike.md)
+• **key**: `ClientIndexerSearchKeyLike`
 
 • **order?**: `"asc"` \| `"desc"`
 
@@ -276,41 +276,41 @@ A function that sends a JSON-RPC request with the given method and transformed p
 
 #### Returns
 
-`AsyncGenerator`\<[`Cell`](ccc.Class.Cell.md), `any`, `unknown`\>
+`AsyncGenerator`\<`Cell`, `any`, `unknown`\>
 
 #### Inherited from
 
-[`Client`](ccc.Class.Client.md).[`findCells`](ccc.Class.Client.md#findcells)
+`Client`.`findCells`
 
 #### Source
 
-[client/client.ts:70](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L70)
+client/client.ts:70
 
 ***
 
 ### findCellsByLockAndType()
 
-> **findCellsByLockAndType**(`lock`, `type`, `withData`): `AsyncGenerator`\<[`Cell`](ccc.Class.Cell.md), `any`, `unknown`\>
+> **findCellsByLockAndType**(`lock`, `type`, `withData`): `AsyncGenerator`\<`Cell`, `any`, `unknown`\>
 
 #### Parameters
 
-• **lock**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **lock**: `ScriptLike`
 
-• **type**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **type**: `ScriptLike`
 
 • **withData**: `boolean`= `true`
 
 #### Returns
 
-`AsyncGenerator`\<[`Cell`](ccc.Class.Cell.md), `any`, `unknown`\>
+`AsyncGenerator`\<`Cell`, `any`, `unknown`\>
 
 #### Inherited from
 
-[`Client`](ccc.Class.Client.md).[`findCellsByLockAndType`](ccc.Class.Client.md#findcellsbylockandtype)
+`Client`.`findCellsByLockAndType`
 
 #### Source
 
-[client/client.ts:94](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L94)
+client/client.ts:94
 
 ***
 
@@ -320,7 +320,7 @@ A function that sends a JSON-RPC request with the given method and transformed p
 
 #### Parameters
 
-• **locks**: [`ScriptLike`](ccc.Type.ScriptLike.md)[]
+• **locks**: `ScriptLike`[]
 
 #### Returns
 
@@ -328,11 +328,11 @@ A function that sends a JSON-RPC request with the given method and transformed p
 
 #### Inherited from
 
-[`Client`](ccc.Class.Client.md).[`getBalance`](ccc.Class.Client.md#getbalance)
+`Client`.`getBalance`
 
 #### Source
 
-[client/client.ts:124](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L124)
+client/client.ts:124
 
 ***
 
@@ -342,7 +342,7 @@ A function that sends a JSON-RPC request with the given method and transformed p
 
 #### Parameters
 
-• **lock**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **lock**: `ScriptLike`
 
 #### Returns
 
@@ -350,55 +350,55 @@ A function that sends a JSON-RPC request with the given method and transformed p
 
 #### Inherited from
 
-[`Client`](ccc.Class.Client.md).[`getBalanceSingle`](ccc.Class.Client.md#getbalancesingle)
+`Client`.`getBalanceSingle`
 
 #### Source
 
-[client/client.ts:112](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L112)
+client/client.ts:112
 
 ***
 
 ### getCell()
 
-> **getCell**(`outPoint`): `Promise`\<`null` \| [`Cell`](ccc.Class.Cell.md)\>
+> **getCell**(`outPoint`): `Promise`\<`null` \| `Cell`\>
 
 #### Parameters
 
-• **outPoint**: [`OutPointLike`](ccc.Type.OutPointLike.md)
+• **outPoint**: `OutPointLike`
 
 #### Returns
 
-`Promise`\<`null` \| [`Cell`](ccc.Class.Cell.md)\>
+`Promise`\<`null` \| `Cell`\>
 
 #### Inherited from
 
-[`Client`](ccc.Class.Client.md).[`getCell`](ccc.Class.Client.md#getcell)
+`Client`.`getCell`
 
 #### Source
 
-[client/client.ts:44](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L44)
+client/client.ts:44
 
 ***
 
 ### getKnownScript()
 
-> `abstract` **getKnownScript**(`script`): `Promise`\<`Pick`\<[`Script`](ccc.Class.Script.md), `"codeHash"` \| `"hashType"`\>\>
+> `abstract` **getKnownScript**(`script`): `Promise`\<`Pick`\<`Script`, `"codeHash"` \| `"hashType"`\>\>
 
 #### Parameters
 
-• **script**: [`KnownScript`](ccc.Enumeration.KnownScript.md)
+• **script**: `KnownScript`
 
 #### Returns
 
-`Promise`\<`Pick`\<[`Script`](ccc.Class.Script.md), `"codeHash"` \| `"hashType"`\>\>
+`Promise`\<`Pick`\<`Script`, `"codeHash"` \| `"hashType"`\>\>
 
 #### Inherited from
 
-[`Client`](ccc.Class.Client.md).[`getKnownScript`](ccc.Class.Client.md#getknownscript)
+`Client`.`getKnownScript`
 
 #### Source
 
-[client/client.ts:32](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L32)
+client/client.ts:32
 
 ***
 
@@ -426,7 +426,7 @@ Will throw an error if the response ID does not match the request ID, or if the 
 
 #### Source
 
-[client/jsonRpc/index.ts:177](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L177)
+client/jsonRpc/index.ts:177
 
 ***
 
@@ -454,4 +454,4 @@ The JSON-RPC payload.
 
 #### Source
 
-[client/jsonRpc/index.ts:213](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/jsonRpc/index.ts#L213)
+client/jsonRpc/index.ts:213

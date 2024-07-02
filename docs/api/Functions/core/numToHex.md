@@ -1,24 +1,24 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / numToHex
+@ckb-ccc/core / ccc / numToHex
 
 # Function: numToHex()
 
-> **numToHex**(`val`): [`Hex`](ccc.Type.Hex.md)
+> **numToHex**(`val`): `Hex`
 
 Converts a NumLike value to a hexadecimal string.
 
 ## Parameters
 
-• **val**: [`NumLike`](ccc.Type.NumLike.md)
+• **val**: `NumLike`
 
 The value to convert, which can be a string, number, bigint, or HexLike.
 
 ## Returns
 
-[`Hex`](ccc.Type.Hex.md)
+`Hex`
 
 A Hex string representing the numeric value.
 
@@ -30,4 +30,4 @@ const hex = numToHex(12345); // Outputs "0x3039"
 
 ## Source
 
-[num/index.ts:50](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/num/index.ts#L50)
+num/index.ts:50

@@ -1,24 +1,24 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / hexFrom
+@ckb-ccc/core / ccc / hexFrom
 
 # Function: hexFrom()
 
-> **hexFrom**(`hex`): [`Hex`](ccc.Type.Hex.md)
+> **hexFrom**(`hex`): `Hex`
 
 Converts a HexLike value to a Hex string.
 
 ## Parameters
 
-• **hex**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **hex**: `BytesLike`
 
 The value to convert, which can be a string, Uint8Array, ArrayBuffer, or number array.
 
 ## Returns
 
-[`Hex`](ccc.Type.Hex.md)
+`Hex`
 
 A Hex string representing the value.
 
@@ -31,4 +31,4 @@ const hexStringFromBytes = hexFrom(new Uint8Array([104, 101, 108, 108, 111])); /
 
 ## Source
 
-[hex/index.ts:25](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/hex/index.ts#L25)
+hex/index.ts:25

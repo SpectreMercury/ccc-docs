@@ -1,24 +1,24 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / hashTypeFromBytes
+@ckb-ccc/core / ccc / hashTypeFromBytes
 
 # Function: hashTypeFromBytes()
 
-> **hashTypeFromBytes**(`bytes`): [`HashType`](ccc.Type.HashType.md)
+> **hashTypeFromBytes**(`bytes`): `HashType`
 
 Converts a byte-like value to a HashType.
 
 ## Parameters
 
-• **bytes**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **bytes**: `BytesLike`
 
 The byte-like value to convert.
 
 ## Returns
 
-[`HashType`](ccc.Type.HashType.md)
+`HashType`
 
 The corresponding HashType.
 
@@ -34,4 +34,4 @@ const hashType = hashTypeFromBytes(new Uint8Array([0])); // Outputs "type"
 
 ## Source
 
-[ckb/script.ts:79](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L79)
+ckb/script.ts:79

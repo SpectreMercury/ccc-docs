@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / isWebview
+@ckb-ccc/core / ccc / isWebview
 
 # Function: isWebview()
 
@@ -18,4 +18,4 @@
 
 ## Source
 
-[utils/index.ts:134](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/utils/index.ts#L134)
+utils/index.ts:134

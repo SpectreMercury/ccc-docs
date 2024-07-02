@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / One
+@ckb-ccc/core / ccc / One
 
 # Variable: One
 
@@ -13,4 +13,4 @@ Equivalent to 1 in fixed-point representation with default decimals (8).
 
 ## Source
 
-[fixedPoint/index.ts:86](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/fixedPoint/index.ts#L86)
+fixedPoint/index.ts:86

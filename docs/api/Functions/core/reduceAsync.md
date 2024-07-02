@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / reduceAsync
+@ckb-ccc/core / ccc / reduceAsync
 
 # Function: reduceAsync()
 
@@ -36,7 +36,7 @@ The accumulated result.
 
 ### Source
 
-[utils/index.ts:86](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/utils/index.ts#L86)
+utils/index.ts:86
 
 ## reduceAsync(values, accumulator, init)
 
@@ -72,4 +72,4 @@ The accumulated result.
 
 ### Source
 
-[utils/index.ts:101](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/utils/index.ts#L101)
+utils/index.ts:101

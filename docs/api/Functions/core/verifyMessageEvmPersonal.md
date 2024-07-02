@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / verifyMessageEvmPersonal
+@ckb-ccc/core / ccc / verifyMessageEvmPersonal
 
 # Function: verifyMessageEvmPersonal()
 
@@ -10,7 +10,7 @@
 
 ## Parameters
 
-• **message**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **message**: `BytesLike`
 
 • **signature**: `string`
 
@@ -22,4 +22,4 @@
 
 ## Source
 
-[signer/evm/verify.ts:4](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/signer/evm/verify.ts#L4)
+signer/evm/verify.ts:4

@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / fixedPointToString
+@ckb-ccc/core / ccc / fixedPointToString
 
 # Function: fixedPointToString()
 
@@ -12,7 +12,7 @@ Converts a FixedPointLike value to its string representation with fixed-point de
 
 ## Parameters
 
-• **val**: [`FixedPointLike`](ccc.Type.FixedPointLike.md)
+• **val**: `FixedPointLike`
 
 The value to convert, which can be a bigint, string, or number.
 
@@ -36,4 +36,4 @@ const strFromNumber = fixedPointToString(123456789, 8); // Outputs "1.23456789"
 
 ## Source
 
-[fixedPoint/index.ts:29](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/fixedPoint/index.ts#L29)
+fixedPoint/index.ts:29

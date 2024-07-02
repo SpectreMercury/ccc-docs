@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / ClientIndexerSearchKey
+@ckb-ccc/core / ccc / ClientIndexerSearchKey
 
 # Class: ClientIndexerSearchKey
 
@@ -10,11 +10,11 @@
 
 ### new ClientIndexerSearchKey()
 
-> **new ClientIndexerSearchKey**(`script`, `scriptType`, `scriptSearchMode`, `filter`, `withData`): [`ClientIndexerSearchKey`](ccc.Class.ClientIndexerSearchKey.md)
+> **new ClientIndexerSearchKey**(`script`, `scriptType`, `scriptSearchMode`, `filter`, `withData`): `ClientIndexerSearchKey`
 
 #### Parameters
 
-• **script**: [`Script`](ccc.Class.Script.md)
+• **script**: `Script`
 
 • **scriptType**: `"type"` \| `"lock"`
 
@@ -26,11 +26,11 @@
 
 #### Returns
 
-[`ClientIndexerSearchKey`](ccc.Class.ClientIndexerSearchKey.md)
+`ClientIndexerSearchKey`
 
 #### Source
 
-[client/clientTypes.ts:40](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/clientTypes.ts#L40)
+client/clientTypes.ts:40
 
 ## Properties
 
@@ -40,17 +40,17 @@
 
 #### Source
 
-[client/clientTypes.ts:44](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/clientTypes.ts#L44)
+client/clientTypes.ts:44
 
 ***
 
 ### script
 
-> **script**: [`Script`](ccc.Class.Script.md)
+> **script**: `Script`
 
 #### Source
 
-[client/clientTypes.ts:41](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/clientTypes.ts#L41)
+client/clientTypes.ts:41
 
 ***
 
@@ -60,7 +60,7 @@
 
 #### Source
 
-[client/clientTypes.ts:43](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/clientTypes.ts#L43)
+client/clientTypes.ts:43
 
 ***
 
@@ -70,7 +70,7 @@
 
 #### Source
 
-[client/clientTypes.ts:42](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/clientTypes.ts#L42)
+client/clientTypes.ts:42
 
 ***
 
@@ -80,22 +80,22 @@
 
 #### Source
 
-[client/clientTypes.ts:55](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/clientTypes.ts#L55)
+client/clientTypes.ts:55
 
 ## Methods
 
 ### from()
 
-> `static` **from**(`keyLike`): [`ClientIndexerSearchKey`](ccc.Class.ClientIndexerSearchKey.md)
+> `static` **from**(`keyLike`): `ClientIndexerSearchKey`
 
 #### Parameters
 
-• **keyLike**: [`ClientIndexerSearchKeyLike`](ccc.Type.ClientIndexerSearchKeyLike.md)
+• **keyLike**: `ClientIndexerSearchKeyLike`
 
 #### Returns
 
-[`ClientIndexerSearchKey`](ccc.Class.ClientIndexerSearchKey.md)
+`ClientIndexerSearchKey`
 
 #### Source
 
-[client/clientTypes.ts:58](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/clientTypes.ts#L58)
+client/clientTypes.ts:58

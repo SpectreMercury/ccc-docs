@@ -1,24 +1,24 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / hashTypeFrom
+@ckb-ccc/core / ccc / hashTypeFrom
 
 # Function: hashTypeFrom()
 
-> **hashTypeFrom**(`val`): [`HashType`](ccc.Type.HashType.md)
+> **hashTypeFrom**(`val`): `HashType`
 
 Converts a HashTypeLike value to a HashType.
 
 ## Parameters
 
-• **val**: [`HashTypeLike`](ccc.Type.HashTypeLike.md)
+• **val**: `HashTypeLike`
 
 The value to convert, which can be a string, number, or bigint.
 
 ## Returns
 
-[`HashType`](ccc.Type.HashType.md)
+`HashType`
 
 The corresponding HashType.
 
@@ -35,4 +35,4 @@ const hashType = hashTypeFrom("type"); // Outputs "type"
 
 ## Source
 
-[ckb/script.ts:28](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/script.ts#L28)
+ckb/script.ts:28

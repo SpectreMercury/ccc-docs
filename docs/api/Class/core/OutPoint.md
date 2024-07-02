@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / OutPoint
+@ckb-ccc/core / ccc / OutPoint
 
 # Class: OutPoint
 
@@ -10,7 +10,7 @@
 
 ### new OutPoint()
 
-> **new OutPoint**(`txHash`, `index`): [`OutPoint`](ccc.Class.OutPoint.md)
+> **new OutPoint**(`txHash`, `index`): `OutPoint`
 
 Creates an instance of OutPoint.
 
@@ -26,11 +26,11 @@ The index of the output in the transaction.
 
 #### Returns
 
-[`OutPoint`](ccc.Class.OutPoint.md)
+`OutPoint`
 
 #### Source
 
-[ckb/transaction.ts:101](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L101)
+ckb/transaction.ts:101
 
 ## Properties
 
@@ -42,7 +42,7 @@ The index of the output in the transaction.
 
 #### Source
 
-[ckb/transaction.ts:103](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L103)
+ckb/transaction.ts:103
 
 ***
 
@@ -54,7 +54,7 @@ The transaction hash.
 
 #### Source
 
-[ckb/transaction.ts:102](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L102)
+ckb/transaction.ts:102
 
 ## Methods
 
@@ -80,7 +80,7 @@ An object representing the outpoint in molecule data format.
 
 #### Source
 
-[ckb/transaction.ts:131](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L131)
+ckb/transaction.ts:131
 
 ***
 
@@ -104,25 +104,25 @@ const outPointBytes = outPoint.encode();
 
 #### Source
 
-[ckb/transaction.ts:149](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L149)
+ckb/transaction.ts:149
 
 ***
 
 ### from()
 
-> `static` **from**(`outPoint`): [`OutPoint`](ccc.Class.OutPoint.md)
+> `static` **from**(`outPoint`): `OutPoint`
 
 Creates an OutPoint instance from an OutPointLike object.
 
 #### Parameters
 
-• **outPoint**: [`OutPointLike`](ccc.Type.OutPointLike.md)
+• **outPoint**: `OutPointLike`
 
 An OutPointLike object or an instance of OutPoint.
 
 #### Returns
 
-[`OutPoint`](ccc.Class.OutPoint.md)
+`OutPoint`
 
 An OutPoint instance.
 
@@ -134,25 +134,25 @@ const outPoint = OutPoint.from({ txHash: "0x...", index: 0 });
 
 #### Source
 
-[ckb/transaction.ts:118](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L118)
+ckb/transaction.ts:118
 
 ***
 
 ### fromBytes()
 
-> `static` **fromBytes**(`bytes`): [`OutPoint`](ccc.Class.OutPoint.md)
+> `static` **fromBytes**(`bytes`): `OutPoint`
 
 Creates an OutPoint instance from a byte-like value or molecule OutPoint.
 
 #### Parameters
 
-• **bytes**: [`BytesLike`](ccc.Type.BytesLike.md) \| `OutPoint`
+• **bytes**: `BytesLike` \| `OutPoint`
 
 The byte-like value or molecule OutPoint to convert.
 
 #### Returns
 
-[`OutPoint`](ccc.Class.OutPoint.md)
+`OutPoint`
 
 An OutPoint instance.
 
@@ -164,4 +164,4 @@ const outPoint = OutPoint.fromBytes(new Uint8Array([/* outpoint bytes */]));
 
 #### Source
 
-[ckb/transaction.ts:165](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L165)
+ckb/transaction.ts:165

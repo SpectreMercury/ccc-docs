@@ -1,24 +1,24 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / Client
+@ckb-ccc/core / ccc / Client
 
 # Class: `abstract` Client
 
 ## Extended by
 
-- [`ClientJsonRpc`](ccc.Class.ClientJsonRpc.md)
+- `ClientJsonRpc`
 
 ## Constructors
 
 ### new Client()
 
-> **new Client**(): [`Client`](ccc.Class.Client.md)
+> **new Client**(): `Client`
 
 #### Returns
 
-[`Client`](ccc.Class.Client.md)
+`Client`
 
 ## Accessors
 
@@ -32,7 +32,7 @@
 
 #### Source
 
-[client/client.ts:30](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L30)
+client/client.ts:30
 
 ***
 
@@ -46,17 +46,17 @@
 
 #### Source
 
-[client/client.ts:29](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L29)
+client/client.ts:29
 
 ## Methods
 
 ### findCells()
 
-> **findCells**(`key`, `order`?, `limit`?): `AsyncGenerator`\<[`Cell`](ccc.Class.Cell.md), `any`, `unknown`\>
+> **findCells**(`key`, `order`?, `limit`?): `AsyncGenerator`\<`Cell`, `any`, `unknown`\>
 
 #### Parameters
 
-• **key**: [`ClientIndexerSearchKeyLike`](ccc.Type.ClientIndexerSearchKeyLike.md)
+• **key**: `ClientIndexerSearchKeyLike`
 
 • **order?**: `"asc"` \| `"desc"`
 
@@ -64,57 +64,57 @@
 
 #### Returns
 
-`AsyncGenerator`\<[`Cell`](ccc.Class.Cell.md), `any`, `unknown`\>
+`AsyncGenerator`\<`Cell`, `any`, `unknown`\>
 
 #### Source
 
-[client/client.ts:70](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L70)
+client/client.ts:70
 
 ***
 
 ### findCellsByLockAndType()
 
-> **findCellsByLockAndType**(`lock`, `type`, `withData`): `AsyncGenerator`\<[`Cell`](ccc.Class.Cell.md), `any`, `unknown`\>
+> **findCellsByLockAndType**(`lock`, `type`, `withData`): `AsyncGenerator`\<`Cell`, `any`, `unknown`\>
 
 #### Parameters
 
-• **lock**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **lock**: `ScriptLike`
 
-• **type**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **type**: `ScriptLike`
 
 • **withData**: `boolean`= `true`
 
 #### Returns
 
-`AsyncGenerator`\<[`Cell`](ccc.Class.Cell.md), `any`, `unknown`\>
+`AsyncGenerator`\<`Cell`, `any`, `unknown`\>
 
 #### Source
 
-[client/client.ts:94](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L94)
+client/client.ts:94
 
 ***
 
 ### findCellsPaged()
 
-> `abstract` **findCellsPaged**(`key`, `order`?, `limit`?, `after`?): `Promise`\<[`ClientFindCellsResponse`](ccc.Type.ClientFindCellsResponse.md)\>
+> `abstract` **findCellsPaged**(`key`, `order`?, `limit`?, `after`?): `Promise`\<`ClientFindCellsResponse`\>
 
 #### Parameters
 
-• **key**: [`ClientIndexerSearchKeyLike`](ccc.Type.ClientIndexerSearchKeyLike.md)
+• **key**: `ClientIndexerSearchKeyLike`
 
 • **order?**: `"asc"` \| `"desc"`
 
-• **limit?**: [`NumLike`](ccc.Type.NumLike.md)
+• **limit?**: `NumLike`
 
 • **after?**: `string`
 
 #### Returns
 
-`Promise`\<[`ClientFindCellsResponse`](ccc.Type.ClientFindCellsResponse.md)\>
+`Promise`\<`ClientFindCellsResponse`\>
 
 #### Source
 
-[client/client.ts:63](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L63)
+client/client.ts:63
 
 ***
 
@@ -124,7 +124,7 @@
 
 #### Parameters
 
-• **locks**: [`ScriptLike`](ccc.Type.ScriptLike.md)[]
+• **locks**: `ScriptLike`[]
 
 #### Returns
 
@@ -132,7 +132,7 @@
 
 #### Source
 
-[client/client.ts:124](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L124)
+client/client.ts:124
 
 ***
 
@@ -142,7 +142,7 @@
 
 #### Parameters
 
-• **lock**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **lock**: `ScriptLike`
 
 #### Returns
 
@@ -150,25 +150,25 @@
 
 #### Source
 
-[client/client.ts:112](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L112)
+client/client.ts:112
 
 ***
 
 ### getCell()
 
-> **getCell**(`outPoint`): `Promise`\<`null` \| [`Cell`](ccc.Class.Cell.md)\>
+> **getCell**(`outPoint`): `Promise`\<`null` \| `Cell`\>
 
 #### Parameters
 
-• **outPoint**: [`OutPointLike`](ccc.Type.OutPointLike.md)
+• **outPoint**: `OutPointLike`
 
 #### Returns
 
-`Promise`\<`null` \| [`Cell`](ccc.Class.Cell.md)\>
+`Promise`\<`null` \| `Cell`\>
 
 #### Source
 
-[client/client.ts:44](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L44)
+client/client.ts:44
 
 ***
 
@@ -178,7 +178,7 @@
 
 #### Parameters
 
-• **key**: [`ClientIndexerSearchKeyLike`](ccc.Type.ClientIndexerSearchKeyLike.md)
+• **key**: `ClientIndexerSearchKeyLike`
 
 #### Returns
 
@@ -186,43 +186,43 @@
 
 #### Source
 
-[client/client.ts:110](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L110)
+client/client.ts:110
 
 ***
 
 ### getKnownScript()
 
-> `abstract` **getKnownScript**(`script`): `Promise`\<`Pick`\<[`Script`](ccc.Class.Script.md), `"codeHash"` \| `"hashType"`\>\>
+> `abstract` **getKnownScript**(`script`): `Promise`\<`Pick`\<`Script`, `"codeHash"` \| `"hashType"`\>\>
 
 #### Parameters
 
-• **script**: [`KnownScript`](ccc.Enumeration.KnownScript.md)
+• **script**: `KnownScript`
 
 #### Returns
 
-`Promise`\<`Pick`\<[`Script`](ccc.Class.Script.md), `"codeHash"` \| `"hashType"`\>\>
+`Promise`\<`Pick`\<`Script`, `"codeHash"` \| `"hashType"`\>\>
 
 #### Source
 
-[client/client.ts:32](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L32)
+client/client.ts:32
 
 ***
 
 ### getTransaction()
 
-> `abstract` **getTransaction**(`txHash`): `Promise`\<`null` \| [`ClientTransactionResponse`](ccc.Type.ClientTransactionResponse.md)\>
+> `abstract` **getTransaction**(`txHash`): `Promise`\<`null` \| `ClientTransactionResponse`\>
 
 #### Parameters
 
-• **txHash**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **txHash**: `BytesLike`
 
 #### Returns
 
-`Promise`\<`null` \| [`ClientTransactionResponse`](ccc.Type.ClientTransactionResponse.md)\>
+`Promise`\<`null` \| `ClientTransactionResponse`\>
 
 #### Source
 
-[client/client.ts:40](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L40)
+client/client.ts:40
 
 ***
 
@@ -232,9 +232,9 @@
 
 #### Parameters
 
-• **transaction**: [`TransactionLike`](ccc.Type.TransactionLike.md)
+• **transaction**: `TransactionLike`
 
-• **validator?**: [`OutputsValidator`](ccc.Type.OutputsValidator.md)
+• **validator?**: `OutputsValidator`
 
 #### Returns
 
@@ -242,4 +242,4 @@
 
 #### Source
 
-[client/client.ts:36](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/client/client.ts#L36)
+client/client.ts:36

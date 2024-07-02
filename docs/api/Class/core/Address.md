@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / Address
+@ckb-ccc/core / ccc / Address
 
 # Class: Address
 
@@ -12,13 +12,13 @@ Represents a ckb address with associated script and prefix.
 
 ### new Address()
 
-> **new Address**(`script`, `prefix`): [`Address`](ccc.Class.Address.md)
+> **new Address**(`script`, `prefix`): `Address`
 
 Creates an instance of Address.
 
 #### Parameters
 
-• **script**: [`Script`](ccc.Class.Script.md)
+• **script**: `Script`
 
 The script associated with the address.
 
@@ -28,11 +28,11 @@ The address prefix.
 
 #### Returns
 
-[`Address`](ccc.Class.Address.md)
+`Address`
 
 #### Source
 
-[address/index.ts:29](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/address/index.ts#L29)
+address/index.ts:29
 
 ## Properties
 
@@ -44,19 +44,19 @@ The address prefix.
 
 #### Source
 
-[address/index.ts:31](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/address/index.ts#L31)
+address/index.ts:31
 
 ***
 
 ### script
 
-> **script**: [`Script`](ccc.Class.Script.md)
+> **script**: `Script`
 
 The script associated with the address.
 
 #### Source
 
-[address/index.ts:30](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/address/index.ts#L30)
+address/index.ts:30
 
 ## Methods
 
@@ -74,87 +74,87 @@ The address as a string.
 
 #### Source
 
-[address/index.ts:113](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/address/index.ts#L113)
+address/index.ts:113
 
 ***
 
 ### from()
 
-> `static` **from**(`address`): [`Address`](ccc.Class.Address.md)
+> `static` **from**(`address`): `Address`
 
 Creates an Address instance from an AddressLike object.
 
 #### Parameters
 
-• **address**: [`AddressLike`](ccc.Type.AddressLike.md)
+• **address**: `AddressLike`
 
 An AddressLike object or an instance of Address.
 
 #### Returns
 
-[`Address`](ccc.Class.Address.md)
+`Address`
 
 An Address instance.
 
 #### Source
 
-[address/index.ts:41](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/address/index.ts#L41)
+address/index.ts:41
 
 ***
 
 ### fromKnownScript()
 
-> `static` **fromKnownScript**(`script`, `args`, `client`): `Promise`\<[`Address`](ccc.Class.Address.md)\>
+> `static` **fromKnownScript**(`script`, `args`, `client`): `Promise`\<`Address`\>
 
 #### Parameters
 
-• **script**: [`KnownScript`](ccc.Enumeration.KnownScript.md)
+• **script**: `KnownScript`
 
-• **args**: [`BytesLike`](ccc.Type.BytesLike.md)
+• **args**: `BytesLike`
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)\>
+`Promise`\<`Address`\>
 
 #### Source
 
-[address/index.ts:93](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/address/index.ts#L93)
+address/index.ts:93
 
 ***
 
 ### fromScript()
 
-> `static` **fromScript**(`script`, `client`): [`Address`](ccc.Class.Address.md)
+> `static` **fromScript**(`script`, `client`): `Address`
 
 Creates an Address instance from a script and client.
 
 #### Parameters
 
-• **script**: [`ScriptLike`](ccc.Type.ScriptLike.md)
+• **script**: `ScriptLike`
 
 The script-like object.
 
-• **client**: [`Client`](ccc.Class.Client.md)
+• **client**: `Client`
 
 The client instance used to fetch the address prefix.
 
 #### Returns
 
-[`Address`](ccc.Class.Address.md)
+`Address`
 
 A promise that resolves to an Address instance.
 
 #### Source
 
-[address/index.ts:89](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/address/index.ts#L89)
+address/index.ts:89
 
 ***
 
 ### fromString()
 
-> `static` **fromString**(`address`, `clients`): `Promise`\<[`Address`](ccc.Class.Address.md)\>
+> `static` **fromString**(`address`, `clients`): `Promise`\<`Address`\>
 
 Creates an Address instance from an address string.
 
@@ -164,13 +164,13 @@ Creates an Address instance from an address string.
 
 The address string to parse.
 
-• **clients**: [`Client`](ccc.Class.Client.md) \| `Record`\<`string`, [`Client`](ccc.Class.Client.md)\>
+• **clients**: `Client` \| `Record`\<`string`, `Client`\>
 
 A Client instance or a record of Client instances keyed by prefix.
 
 #### Returns
 
-`Promise`\<[`Address`](ccc.Class.Address.md)\>
+`Promise`\<`Address`\>
 
 A promise that resolves to an Address instance.
 
@@ -180,4 +180,4 @@ Will throw an error if the address prefix is unknown or mismatched.
 
 #### Source
 
-[address/index.ts:59](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/address/index.ts#L59)
+address/index.ts:59

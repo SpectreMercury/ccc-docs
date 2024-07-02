@@ -1,8 +1,8 @@
-[**@ckb-ccc/joy-id**](README.md) • **Docs**
+**@ckb-ccc/joy-id** • **Docs**
 
 ***
 
-[@ckb-ccc/joy-id](README.md) / [JoyId](Namespace.JoyId.md) / BitcoinSigner
+@ckb-ccc/joy-id / JoyId / BitcoinSigner
 
 # Class: BitcoinSigner
 
@@ -16,7 +16,7 @@ Class representing a Bitcoin signer that extends SignerBtc from @ckb-ccc/core.
 
 ### new BitcoinSigner()
 
-> **new BitcoinSigner**(`client`, `name`, `icon`, `addressType`?, `appUri`?, `connectionsRepo`?): [`BitcoinSigner`](JoyId.Class.BitcoinSigner.md)
+> **new BitcoinSigner**(`client`, `name`, `icon`, `addressType`?, `appUri`?, `connectionsRepo`?): `BitcoinSigner`
 
 Creates an instance of BitcoinSigner.
 
@@ -48,7 +48,7 @@ The connections repository.
 
 #### Returns
 
-[`BitcoinSigner`](JoyId.Class.BitcoinSigner.md)
+`BitcoinSigner`
 
 #### Overrides
 
@@ -56,7 +56,7 @@ The connections repository.
 
 #### Source
 
-[joy-id/src/btc/index.ts:41](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L41)
+joy-id/src/btc/index.ts:41
 
 ## Properties
 
@@ -68,7 +68,7 @@ The address type.
 
 #### Source
 
-[joy-id/src/btc/index.ts:45](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L45)
+joy-id/src/btc/index.ts:45
 
 ***
 
@@ -80,7 +80,7 @@ The application URI.
 
 #### Source
 
-[joy-id/src/btc/index.ts:46](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L46)
+joy-id/src/btc/index.ts:46
 
 ***
 
@@ -104,7 +104,7 @@ core/dist/signer/signer/index.d.ts:32
 
 #### Source
 
-[joy-id/src/btc/index.ts:16](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L16)
+joy-id/src/btc/index.ts:16
 
 ***
 
@@ -116,7 +116,7 @@ The connections repository.
 
 #### Source
 
-[joy-id/src/btc/index.ts:47](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L47)
+joy-id/src/btc/index.ts:47
 
 ***
 
@@ -128,7 +128,7 @@ The icon URL of the signer.
 
 #### Source
 
-[joy-id/src/btc/index.ts:44](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L44)
+joy-id/src/btc/index.ts:44
 
 ***
 
@@ -140,7 +140,7 @@ The name of the signer.
 
 #### Source
 
-[joy-id/src/btc/index.ts:43](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L43)
+joy-id/src/btc/index.ts:43
 
 ## Accessors
 
@@ -204,7 +204,7 @@ Will throw an error if not connected.
 
 #### Source
 
-[joy-id/src/btc/index.ts:24](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L24)
+joy-id/src/btc/index.ts:24
 
 ***
 
@@ -226,7 +226,7 @@ A promise that resolves when the connection is established.
 
 #### Source
 
-[joy-id/src/btc/index.ts:89](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L89)
+joy-id/src/btc/index.ts:89
 
 ***
 
@@ -336,7 +336,7 @@ A promise that resolves to the Bitcoin account address.
 
 #### Source
 
-[joy-id/src/btc/index.ts:71](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L71)
+joy-id/src/btc/index.ts:71
 
 ***
 
@@ -358,7 +358,7 @@ A promise that resolves to the Bitcoin public key.
 
 #### Source
 
-[joy-id/src/btc/index.ts:80](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L80)
+joy-id/src/btc/index.ts:80
 
 ***
 
@@ -396,7 +396,7 @@ The configuration object.
 
 #### Source
 
-[joy-id/src/btc/index.ts:57](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L57)
+joy-id/src/btc/index.ts:57
 
 ***
 
@@ -518,7 +518,7 @@ A promise that resolves to true if connected, false otherwise.
 
 #### Source
 
-[joy-id/src/btc/index.ts:124](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L124)
+joy-id/src/btc/index.ts:124
 
 ***
 
@@ -656,7 +656,7 @@ A promise that resolves to the signed message.
 
 #### Source
 
-[joy-id/src/btc/index.ts:141](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/joy-id/src/btc/index.ts#L141)
+joy-id/src/btc/index.ts:141
 
 ***
 

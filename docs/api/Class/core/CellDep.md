@@ -1,8 +1,8 @@
-[**@ckb-ccc/core**](README.md) • **Docs**
+**@ckb-ccc/core** • **Docs**
 
 ***
 
-[@ckb-ccc/core](README.md) / [ccc](Namespace.ccc.md) / CellDep
+@ckb-ccc/core / ccc / CellDep
 
 # Class: CellDep
 
@@ -10,51 +10,51 @@
 
 ### new CellDep()
 
-> **new CellDep**(`outPoint`, `depType`): [`CellDep`](ccc.Class.CellDep.md)
+> **new CellDep**(`outPoint`, `depType`): `CellDep`
 
 Creates an instance of CellDep.
 
 #### Parameters
 
-• **outPoint**: [`OutPoint`](ccc.Class.OutPoint.md)
+• **outPoint**: `OutPoint`
 
 The outpoint of the cell dependency.
 
-• **depType**: [`DepType`](ccc.Type.DepType.md)
+• **depType**: `DepType`
 
 The dependency type.
 
 #### Returns
 
-[`CellDep`](ccc.Class.CellDep.md)
+`CellDep`
 
 #### Source
 
-[ckb/transaction.ts:472](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L472)
+ckb/transaction.ts:472
 
 ## Properties
 
 ### depType
 
-> **depType**: [`DepType`](ccc.Type.DepType.md)
+> **depType**: `DepType`
 
 The dependency type.
 
 #### Source
 
-[ckb/transaction.ts:474](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L474)
+ckb/transaction.ts:474
 
 ***
 
 ### outPoint
 
-> **outPoint**: [`OutPoint`](ccc.Class.OutPoint.md)
+> **outPoint**: `OutPoint`
 
 The outpoint of the cell dependency.
 
 #### Source
 
-[ckb/transaction.ts:473](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L473)
+ckb/transaction.ts:473
 
 ## Methods
 
@@ -88,25 +88,25 @@ An object representing the cell dependency in molecule data format.
 
 #### Source
 
-[ckb/transaction.ts:509](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L509)
+ckb/transaction.ts:509
 
 ***
 
 ### fromBytes()
 
-> **fromBytes**(`bytes`): [`CellDep`](ccc.Class.CellDep.md)
+> **fromBytes**(`bytes`): `CellDep`
 
 Creates a CellDep instance from a byte-like value or molecule CellDep.
 
 #### Parameters
 
-• **bytes**: [`BytesLike`](ccc.Type.BytesLike.md) \| `CellDep`
+• **bytes**: `BytesLike` \| `CellDep`
 
 The byte-like value or molecule CellDep to convert.
 
 #### Returns
 
-[`CellDep`](ccc.Class.CellDep.md)
+`CellDep`
 
 A CellDep instance.
 
@@ -118,7 +118,7 @@ const cellDep = CellDep.fromBytes(new Uint8Array([/* cell dep bytes */]));
 
 #### Source
 
-[ckb/transaction.ts:543](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L543)
+ckb/transaction.ts:543
 
 ***
 
@@ -142,25 +142,25 @@ const cellDepBytes = cellDep.toBytes();
 
 #### Source
 
-[ckb/transaction.ts:527](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L527)
+ckb/transaction.ts:527
 
 ***
 
 ### from()
 
-> `static` **from**(`cellDep`): [`CellDep`](ccc.Class.CellDep.md)
+> `static` **from**(`cellDep`): `CellDep`
 
 Creates a CellDep instance from a CellDepLike object.
 
 #### Parameters
 
-• **cellDep**: [`CellDepLike`](ccc.Type.CellDepLike.md)
+• **cellDep**: `CellDepLike`
 
 A CellDepLike object or an instance of CellDep.
 
 #### Returns
 
-[`CellDep`](ccc.Class.CellDep.md)
+`CellDep`
 
 A CellDep instance.
 
@@ -175,4 +175,4 @@ const cellDep = CellDep.from({
 
 #### Source
 
-[ckb/transaction.ts:492](https://github.com/SpectreMercury/ccc/blob/df48adb02ef9cfbc211311f00ecef869462de5fa/packages/core/src/ckb/transaction.ts#L492)
+ckb/transaction.ts:492
