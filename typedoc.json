@@ -1,6 +1,6 @@
 {
-  "entryPoints": ["../ccc/packages/core/src/index.ts"],
-  "out": "docs/api",
+  "entryPoints": ["../ccc/packages/eip6963/src/index.ts"],
+  "out": "docs/api/eip6963",
   "plugin": ["typedoc-plugin-markdown"],
   "outputFileStrategy": "members",
   "flattenOutputFiles": true
